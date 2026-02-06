@@ -1,0 +1,106 @@
+/* TCR Canvas Template - GitHub Pages versie */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background: #f0f0f0;
+    color: #333;
+    line-height: 1.6;
+}
+
+.page-wrapper {
+    max-width: 1180px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    padding: 20px;
+}
+
+/* Zadkine/TCR template classes */
+.zadkine-template-container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.zadkine-banner {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.zadkine-banner img {
+    width: 100%;
+    max-width: 1140px;
+    border-radius: 8px;
+}
+
+.zadkine-banner h2 {
+    color: #006445;
+    margin-bottom: 10px;
+    font-size: 28px;
+}
+
+.zadkine-navigation-button {
+    display: inline-block;
+    margin: 5px;
+}
+
+.zadkine-navigation-button a {
+    display: inline-block;
+    background: #b0bd36;
+    color: white !important;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: transform 0.2s;
+}
+
+.zadkine-navigation-button a:hover {
+    transform: scale(1.05);
+    background: #9aa630;
+}
+
+.zadkine-navigation-button.grow {
+    display: inline-block;
+}
+
+/* Section classes */
+.item1 { margin: 0; }
+.item3 { margin-top: 50px; text-align: center; }
+.item4 { margin-top: 20px; }
+
+/* Canvas-like details/summary styling */
+details {
+    cursor: pointer;
+}
+
+details summary {
+    cursor: pointer;
+}
+
+details summary:hover {
+    opacity: 0.85;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    body { padding: 10px; }
+    .page-wrapper { padding: 10px; border-radius: 8px; }
+}
+
+/* Preview banner */
+.preview-banner {
+    background: #006445;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 14px;
+    border-radius: 8px 8px 0 0;
+    margin: -20px -20px 20px -20px;
+}
+
+.preview-banner a {
+    color: #b0bd36;
+    text-decoration: underline;
+}
