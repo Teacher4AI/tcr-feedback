@@ -31,6 +31,9 @@ body {
 .zadkine-banner img {
     width: 100%;
     max-width: 1140px;
+    height: 160px;
+    object-fit: cover;
+    object-position: center;
     border-radius: 8px;
 }
 
