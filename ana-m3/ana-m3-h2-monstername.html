@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M3.2 — Monstername — TCR Preview</title>
+    <link rel="stylesheet" href="style.css?v=3">
+</head>
+<body>
+    <div class="preview-banner">
+        <img src="media/tcr-logo.png" alt="TCR" style="height: 30px; vertical-align: middle; margin-right: 10px;">
+        TCR Analyser Techniek — Preview omgeving
+    </div>
+    <div class="page-wrapper">
+<div style="max-width: 1140px;">
+    <div class="zadkine-template-container tcr-template-container" style="margin: 0;">
+        <section class="item1" style="margin: 0;">
+            <div class="zadkine-banner"><img src="media/banner-ana-m3.png" alt="Banner ANA Module 3" />
+                <h2>ANA – Module 3</h2>
+            </div>
+
+            <h3 style="margin-top: 30px;">2.1 Leerdoelen</h3>
+            <p>Na het volgen van dit hoofdstuk kun je:</p>
+            <ul>
+                <li>Het verschil uitleggen tussen labsamples en continue metingen en wanneer je ze gebruikt</li>
+                <li>De voordelen en nadelen van beide methoden beschrijven</li>
+                <li>Een keuze maken voor de juiste manier van monstername in verschillende situaties</li>
+                <li>De verschillende continue meting strategieën (in-line, at-line, on-line) herkennen en toepassen</li>
+            </ul>
+
+            <h3 style="margin-top: 30px;">2.2 Van koffieproever naar espressomachine: De evolutie van monstername</h3>
+            <p>Van handmatige proeverij naar geautomatiseerde kwaliteitscontrole</p>
+            <p>Stel je voor: een koffieproever in een grote koffiebranderij moet de kwaliteit controleren. Hij heeft twee opties:</p>
+            <p>De traditionele methode: Elke ochtend neemt hij samples uit verschillende batches, brengt deze naar het lab, voert handmatige tests uit en krijgt rond de lunch de resultaten binnen.</p>
+            <p>De moderne methode: Een sensor in elke productielijn meet continu de kwaliteit en geeft direct feedback aan het productieproces.</p>
+            <p>Dit voorbeeld laat perfect het verschil zien tussen labsamples en continu meten in de procesindustrie.</p>
+            <p>Waarom is deze keuze zo belangrijk voor een technicus?</p>
+            <ul>
+                <li>Bij kwaliteitscontrole van een chemisch proces bepaalt de manier van monstername:</li>
+                <li>Reactiesnelheid: Hoe snel kun je reageren op afwijkingen?</li>
+                <li>Procesbeheersing: Kun je het proces direct bijsturen of alleen achteraf corrigeren?</li>
+                <li>Kosten: Wat zijn de kosten per meting vergeleken met wat procesoptimalisatie oplevert?</li>
+                <li>Betrouwbaarheid: Hoe goed geeft je meting weer wat er echt gebeurt in het proces?</li>
+            </ul>
+            <p>Net zoals de koffiebranderij moet elke industriële plant de juiste balans vinden tussen grondige controle en snelle respons.</p>
+
+            <h3 style="margin-top: 30px;">2.3 Labsamples: De grondige inspectie</h3>
+            <p>Handmatige monstername en laboratoriumanalyse</p>
+            <p>Labsamples zijn de traditionele manier van procesbewaking: een operator of laborant neemt op vaste tijden monsters, brengt deze naar een lab waar specialisten uitgebreide tests uitvoeren.</p>
+            <p>Als technicus moet je begrijpen hoe dit werkt, want je gebruikt deze labresultaten om je analyzers goed in te stellen.</p>
+            <p>Wanneer worden labsamples toegepast?</p>
+            <ul>
+                <li><strong>Batch-processen die lang duren</strong><br>Bij het maken van verf duurt één batch 8-12 uur. Labsamples aan het einde van elke batch zijn genoeg voor kwaliteitscontrole.</li>
+                <li><strong>Ingewikkelde testen met veel verschillende metingen</strong><br>Voor medicijnen zijn soms meer dan 20 verschillende tests nodig (zuiverheid, hoe goed het oplost, hoe lang het houdbaar is, etc.). Deze tests zijn zo ingewikkeld dat ze beter in een lab kunnen.</li>
+                <li><strong>Tests die belangrijk zijn maar lang duren</strong><br>Bij voedselproductie zijn bacterietesten cruciaal maar langzaam - je moet vaak 1 tot 2 dagen wachten op het resultaat. Dat kun je niet continu doen.</li>
+                <li><strong>Officiële papieren voor controle</strong><br>De medicijn- en voedselindustrie moeten vaak officiële certificaten hebben voor elke batch. Dit moet via een erkend lab.</li>
+            </ul>
+
+<div style="margin: 16px 0;">
+    <p style="background: #e8f5e9; padding: 12px; border-left: 4px solid #4caf50; margin: 0;"><strong>&#128214; Praktijkvoorbeeld</strong></p>
+    <div style="background: #f5f5f5; padding: 16px; border-left: 4px solid #bdbdbd;">
+        <p style="margin: 0;">Kwaliteitscontrole biodieselproductie</p>
+    </div>
+</div>
+            <p>Bij biodieselproductie worden labsamples gebruikt op drie momenten:</p>
+            <ul>
+                <li>Grondstofcontrole:</li>
+                <li>Sample van aangevoerde plantaardige olie</li>
+                <li>Tests: vrije vetzuren, vochtgehalte, vervuiling</li>
+                <li>Hoe vaak: Bij elke levering (1-2x per week)</li>
+                <li>Procesbewaking:</li>
+                <li>Sample na de reactor</li>
+                <li>Tests: conversiegraad (hoeveel is omgezet), methanol-gehalte</li>
+                <li>Hoe vaak: 1x per batch (elke 6 uur)</li>
+                <li>Eindproductcontrole:</li>
+                <li>Sample van het gefilterde eindproduct</li>
+                <li>Tests: FAME-gehalte (dit moet &gt;96.5% zijn), zuurgetal, stabiliteit</li>
+                <li>Hoe vaak: 1x per batch - zonder goedkeuring geen verkoop!</li>
+                <li>Voordelen van labsamples</li>
+            </ul>
+            <ul>
+                <li><strong>Uitgebreide analyzemogelijkheden</strong><br>Laboratoria hebben geavanceerde apparatuur die heel nauwkeurig kan meten. Deze apparaten zijn vaak te groot, te duur of te gevoelig om naast het proces te plaatsen.</li>
+                <li><strong>Hoge nauwkeurigheid</strong><br>In het lab zijn de omstandigheden gecontroleerd: vaste temperatuur, schone lucht, geen trillingen. Getrainde mensen voeren de metingen uit. Dat maakt de resultaten zeer betrouwbaar.</li>
+                <li><strong>Flexibiliteit bij problemen</strong><br>Als er iets vreemds in je monster zit, kan het lab snel een extra test doen. Bij een analyzer naast het proces zou je eerst nieuwe apparatuur moeten installeren.</li>
+                <li><strong>Officiële certificering</strong><br>Lab-instrumenten worden gekalibreerd met officiële referentiemonsters. Dat geeft je volledige traceerbaarheid - je kunt precies aantonen hoe je gemeten hebt.</li>
+            </ul>
+            <p>Nadelen van labsampels</p>
+            <ul>
+                <li><strong>Tijdvertraging (wachttijd)</strong><br>Van monstername tot resultaat kunnen 2-24 uur verstrijken. Als er iets mis is, is de productie vaak al verder gegaan.</li>
+                <li><strong>Logistieke drukte</strong><br>Sample-potjes, transport, labels, planning - bij elke stap kan iets fout gaan of vertraging ontstaan.</li>
+                <li><strong>Beperkt beeld</strong><br>Eén monster laat misschien niet het hele plaatje zien. Als het proces continu draait, zie je maar een momentopname.</li>
+                <li><strong>Kosten per test</strong><br>Laboratoriumanalyses kosten tijd en geld: mensen, apparatuur, chemicaliën. Bij veel samples loopt dit op.</li>
+            </ul>
+
+
+<div style="text-align: left; margin: 20px 0;">
+    <img src="media/ana-m3-h2-infographic1-lab-vs-continuous-vergelijking.png" alt="Vergelijking labsamples vs continue meting" style="max-width: 620px; width: 100%; height: auto; border-radius: 4px;" loading="lazy" />
+    <p style="font-size: 0.85rem; color: #666; margin-top: 6px;"><em>Overzicht: labsamples versus continue meting in de procesindustrie</em></p>
+</div>
+
+            <h3 style="margin-top: 30px;">2.4 Continue meting: Real-time procesbeheersing</h3>
+            <p>Geautomatiseerde continue monitoring</p>
+            <p>Continu meten werkt heel anders: in plaats van af en toe te controleren, wordt het proces continu in de gaten gehouden door automatische systemen die direct terugkoppelen.</p>
+            <p>Als technicus is dit jouw primaire werkgebied - dit zijn de systemen die je installeert, onderhoudt en instelt.</p>
+            <p>De kracht van continue procesbeheersing</p>
+            <ul>
+                <li><strong>Snelle respons</strong><br>Als bijvoorbeeld de pH stijgt, detecteert de pH analyzer binnen seconden de veranderende zuurgraad. Het systeem kan dan automatisch de dosering aanpassen.</li>
+                <li><strong>Het proces optimaliseren</strong><br>Met continue data kan het systeem zichzelf automatisch bijsturen voor het beste resultaat. Geen handmatig ingrijpen meer nodig.</li>
+                <li><strong>Voorspellend onderhoud</strong><br>Geleidelijke veranderingen in meetwaarden kunnen wijzen op slijtage van apparatuur, voordat het écht kapot gaat.</li>
+            </ul>
+            <p>Waar wordt continu meten gebruikt?</p>
+            <p><strong>Veiligheid-kritische bewaking</strong><br>In een fornuis bijvoorbeeld wordt procesgas of olie verhit door verbranding. Voor veilige en efficiënte verbranding is de juiste hoeveelheid zuurstof cruciaal. Te weinig zuurstof leidt tot onvolledige verbranding met gevaarlijke CO-vorming. Te veel zuurstof verspilt brandstof en verhoogt NOx-uitstoot.</p>
+            <p>Daarom meten zuurstofanalyzers in de rookgassen continu, seconde voor seconde. Bij afwijkingen stuurt het systeem automatisch de luchttoevoer bij. Metingen af en toe zijn niet voldoende voor persoonsveiligheid.</p>
+            <ul>
+                <li><strong>Snelle processen</strong><br>Bij destillatie kunnen veranderingen binnen enkele minuten optreden. Continue monitoring voorkomt dat je product buiten specificatie valt.</li>
+                <li><strong>Dure processen</strong><br>Bij productie van medicijnen kunnen enkele minuten verkeerd product miljoenen euro's kosten.</li>
+                <li><strong>Automatische procesregeling</strong><br>Moderne raffinaderijen regelen fabrieksunits automatisch op basis van continue metingen voor de beste opbrengst.</li>
+            </ul>
+
+<div style="margin: 16px 0;">
+    <p style="background: #e8f5e9; padding: 12px; border-left: 4px solid #4caf50; margin: 0;"><strong>&#128214; Praktijkvoorbeeld</strong></p>
+    <div style="background: #f5f5f5; padding: 16px; border-left: 4px solid #bdbdbd;">
+        <p style="margin: 0;">Continue ethyleenoxide bewaking</p>
+    </div>
+</div>
+            <p>Bij ethyleenoxide-productie (zeer reactief en giftig) is veiligheid cruciaal. Daarom:</p>
+            <ul>
+                <li>Reactor-ingang monitoring:</li>
+                <li>Zuurstof/ethyleen-verhouding (explosiepreventie)</li>
+                <li>Elke 10 seconden een nieuwe meting</li>
+                <li>Bij afwijking: Automatische noodstop binnen 30 seconden</li>
+                <li>Reactor-uitgang monitoring:</li>
+                <li>EO-concentratie (proces-optimalisatie)</li>
+                <li>Elke paar minuten een nieuwe meting</li>
+                <li>Automatische bijsturing van temperatuur en flow</li>
+                <li>Omgevingsbewaking:</li>
+                <li>EO-lekkage detectie (personeelsveiligheid)</li>
+                <li>Elke 5 seconden een nieuwe meting</li>
+                <li>Bij alarm: Evacuatie-procedure</li>
+            </ul>
+
+<p style="background: #fff3cd; padding: 12px; border-left: 4px solid #ffc107; margin: 12px 0;">&#9888;&#65039; <strong>Let op: Deze continue bewaking is essentieel omdat labsamples veel te traag zouden zijn voor deze gevaarlijke toepassing. Bovendien zou het nemen van monsters van ethyleenoxide (EO) zelf een groot veiligheidsrisico vormen – EO is extreem reactief, giftig en explosief. Door continue in-line of on-line monitoring te gebruiken, voorkom je dat operators gevaarlijke monsters moeten nemen en naar het lab moeten transporteren.</strong></p>
+            <p>Voordelen van continuous sampling</p>
+            <ul>
+                <li><strong>Snelle respons op afwijkingen</strong><br>Detectie en correctie binnen seconden tot minuten, in plaats van uren.</li>
+                <li><strong>Minder productverlies</strong><br>Direct ingrijpen voorkomt dat grote hoeveelheden product buiten specificatie vallen.</li>
+                <li><strong>Betere procesbeheersing</strong><br>Constante feedback zorgt voor stabielere procescondities en hogere efficiency.</li>
+                <li><strong>Automatisering mogelijk</strong><br>Continuous data kan direct gekoppeld worden aan automatische regelsystemen.</li>
+            </ul>
+            <p>Nadelen van continue meting</p>
+            <ul>
+                <li><strong>Hogere initiële kosten</strong><br>Een analyzer kost tussen €20.000 en €200.000, afhankelijk van het type. Labsamples kosten €50-500 per stuk.</li>
+                <li><strong>Regelmatig onderhoud nodig</strong><br>Analyzers en sample conditioning systemen moeten regelmatig worden gekalibreerd, gereinigd of soms vervangen. Bij continue monitoring in de plant heb je niet alleen onderhoud aan de analyzer zelf (zoals in het lab), maar ook aan het hele sample conditioning systeem: filters, pompen, verwarming, drukregeling en sample-lijnen. Dit maakt het onderhoud complexer dan bij labanalyses.</li>
+                <li><strong>Technische complexiteit</strong><br>Je hebt geschoold personeel nodig dat de systemen kan installeren, onderhouden en repareren.</li>
+                <li><strong>Niet altijd mogelijk</strong><br>Sommige metingen zijn te complex of te gevoelig voor automatisering in de plant.</li>
+            </ul>
+
+            <h3 style="margin-top: 30px;">2.5 Hoe plaats je een analyzer? Drie strategie&euml;n in de praktijk</h3>
+            <p>De kunst van het kiezen van de juiste plek</p>
+            <p>Nu je weet waarom continu meten belangrijk is, gaan we kijken: waar plaats je die analyzer precies? In de leiding zelf? Ernaast? Of toch op afstand met een sample conditioning systeem?</p>
+            <p>Als technicus ga je deze keuze niet alleen maken, maar je moet wel begrijpen wat de verschillen zijn en waarom engineers voor een bepaalde oplossing kiezen.</p>
+
+<div style="text-align: left; margin: 20px 0;">
+    <img src="media/ana-m3-h2-infographic2-inline-atline-online-strategie.png" alt="In-line, at-line en on-line monitoring strategieen" style="max-width: 620px; width: 100%; height: auto; border-radius: 4px;" loading="lazy" />
+    <p style="font-size: 0.85rem; color: #666; margin-top: 6px;"><em>Overzicht van de drie monitoring-strategie&euml;n: in-line, at-line en on-line</em></p>
+</div>
+
+            <p>Denk aan het verschil tussen:</p>
+            <ul>
+                <li>In-line: Een pH-sensor die rechtstreeks in de procesleiding zit </li>
+                <li>At-line: Een pH-meter waar je handmatig een watermonster naartoe brengt </li>
+                <li>On-line: Een pH-analyzer waar automatisch via een sample-lijn water naartoe wordt gepompt</li>
+                <li>Allemaal meten ze pH, maar op verschillende manieren met elk hun eigen toepassing.</li>
+                <li>In-line (In situ): De sensor zit midden in het proces</li>
+            </ul>
+            <ul>
+                <li><strong>Wat houdt het in?</strong><br>Bij in-line monitoring zit de meetkop van de analyzer direct in de procesleiding of tank. De sensor heeft rechtstreeks contact met het product. Geen apart sample-systeem, geen transport - gewoon direct meten in de stroom.</li>
+                <li><strong>Herkenbaar voorbeeld uit de plant</strong><br>Stel je een grote afvalwater-leiding voor in een raffinaderij. Midden in die leiding zit een pH-sensor gemonteerd. Het afvalwater stroomt er continu overheen, en de sensor meet seconde voor seconde de pH-waarde. Die data gaat direct naar de control room waar operators het proces bijsturen.</li>
+            </ul>
+            <p>Wanneer kies je voor in-line?</p>
+            <ul>
+                <li>Het proces verandert snel (binnen seconden/minuten)</li>
+                <li>Direct ingrijpen is noodzakelijk</li>
+                <li>Onderhoudsarme metingen (druk, temperatuur, pH)</li>
+                <li>Het proces is niet te vuil (heldere vloeistoffen of schone gassen)</li>
+                <li>Voordelen</li>
+                <li>Snelste meting mogelijk - geen vertraging</li>
+                <li>Geen sample-systeem nodig - minder onderdelen</li>
+                <li>Perfect voor automatische regelsystemen</li>
+                <li>Uitdagingen</li>
+                <li>Sensor zit in het proces, vaak moeilijk bereikbaar</li>
+                <li>Sensor moet bestand zijn tegen hoge druk, temperatuur of agressieve chemicaliën</li>
+                <li>Bij vervuiling kan de sensor snel problemen krijgen</li>
+                <li>Om een sensor te vervangen moet het proces soms stopgezet worden</li>
+                <li>At-line: De analyzer staat naast het proces</li>
+            </ul>
+
+            <h4>Wat houdt het in?</h4>
+            <p>Bij at-line monitoring staat de analyzer dicht bij de procesleiding of tank, bijvoorbeeld in een nabijgelegen shelter of analyzerruimte. Een operator neemt handmatig een sample uit het proces en brengt dit naar de analyzer. De analyzer zelf zit dus niet in direct contact met het proces, maar de afstand is klein genoeg om snel resultaten te krijgen.</p>
+
+            <h4>Herkenbaar voorbeeld uit de plant</h4>
+            <p>Stel je een operator voor die een kraantje opent aan een procesleiding en een flesje vult met een watermonster. Die loopt dan een paar meter naar een nabijgelegen shelter waar een pH-analyzer staat opgesteld. De operator biedt het sample aan bij de analyzer, die binnen enkele minuten de pH-waarde meet en doorgeeft aan de control room.</p>
+
+            <h4>Wanneer kies je voor at-line?</h4>
+            <ul>
+                <li>Je wilt snelle metingen, maar het proces is te agressief of vuil voor een in-line sensor</li>
+                <li>De analyzer heeft bescherming nodig tegen extreme omstandigheden (hoge druk, temperatuur, corrosieve stoffen)</li>
+                <li>Je meet niet continu, maar op vaste momenten (bijvoorbeeld elk uur of elke shift)</li>
+                <li>Het process is redelijk stabiel en verandert niet binnen seconden</li>
+            </ul>
+
+            <h4>Voordelen</h4>
+            <ul>
+                <li>Analyzer staat beschermd in een shelter of analyzerruimte</li>
+                <li>Geen risico op vervuiling of beschadiging van de sensor in het proces</li>
+                <li>Geschikt voor complexere analyses die speciale apparatuur vereisen</li>
+                <li>Flexibel: je kunt meerdere samples vanaf verschillende locaties naar dezelfde analyzer brengen</li>
+            </ul>
+
+            <h4>Uitdagingen</h4>
+            <ul>
+                <li>Handmatig werk: operator moet het sample afnemen en naar de analyzer brengen</li>
+                <li>Kleine vertraging tussen sampling en meting</li>
+                <li>Sample kan veranderen tussen afname en meting (bijvoorbeeld temperatuur, ontgassing)</li>
+                <li>Niet geschikt voor processen die zeer snel veranderen of directe actie vereisen</li>
+                <li>On-line: De analyzer staat op afstand met een vaste sample toevoer en eventueel een retour</li>
+            </ul>
+            <ul>
+                <li><strong>Wat houdt het in?</strong><br>Bij on-line monitoring staat de analyzer op grotere afstand van het proces - vaak in een aparte analyzer-house. Een sample wordt via leidingen naar de analyzer getransporteerd, geanalyseerd, en daarna teruggevoerd naar het proces. Deze sample-loop zorgt ervoor dat het sample representatief blijft.</li>
+                <li><strong>Herkenbaar voorbeeld uit de plant</strong><br>Stel je een groot raffinaderij-complex voor met 20 verschillende processen. In het midden staat één centraal analyzer-gebouw met daarin 15 verschillende analyzers. Vanaf alle procesunits lopen sample-leidingen (soms tientallen meters lang) naar dit gebouw. Na analyse gaat het sample via return-leidingen terug.</li>
+            </ul>
+
+<div style="text-align: left; margin: 20px 0;">
+    <img src="media/ana-m3-h2-foto8-analyzer-shelter-yokogawa.jpg" alt="Analyzer shelter Yokogawa" style="max-width: 350px; width: 100%; height: auto; border-radius: 4px;" loading="lazy" />
+    <p style="font-size: 0.85rem; color: #666; margin-top: 6px;"><em>Analyzer shelter (Yokogawa) – een geklimatiseerde behuizing voor on-line analyzers</em></p>
+</div>
+
+            <p>Wanneer kies je voor on-line?</p>
+            <ul>
+                <li>Respons snelheid</li>
+                <li>Centralisatie is effici&euml;nt (meerdere processen bedienen vanaf &eacute;&eacute;n locatie)</li>
+                <li>Gezamelijke utilities (gassen, koelwater, signalering, voeding)</li>
+                <li>Klimaatbeheersing cruciaal (één analyzer-house met hvac)</li>
+                <li>Voordelen</li>
+                <li>Veilige werkomgeving - schoon, klimaatgeregeld.</li>
+                <li>Efficiënt onderhoud - alle apparatuur op één plek</li>
+                <li>Flexibiliteit - één analyzer kan meerdere processen bedienen</li>
+                <li>Uitdagingen</li>
+                <li>Lange sample-lijnen soms met verwarming</li>
+                <li>Sample-vertraging zo acceptabel mogelijk houden.</li>
+                <li>Complexiteit sample-systeem (pompen, temperatuur, drukregeling, schoon sample)</li>
+                <li>Hogere investeringskosten (analyzer-house, lange leidingen, return-systeem)</li>
+                <li>Vergelijking in één oogopslag</li>
+            </ul>
+
+            <h3 style="margin-top: 30px;">2.6 Hoe kies je de juiste strategie? Vier praktische vragen</h3>
+            <p>Nu je de drie strategie&euml;n kent, blijft de vraag: welke kies je wanneer? In de praktijk stel je jezelf vier hoofdvragen:</p>
+
+<div style="text-align: left; margin: 20px 0;">
+    <img src="media/ana-m3-h2-infographic3-beslisboom-strategie.png" alt="Beslisboom voor keuze monitoring strategie" style="max-width: 620px; width: 100%; height: auto; border-radius: 4px;" loading="lazy" />
+    <p style="font-size: 0.85rem; color: #666; margin-top: 6px;"><em>Beslisboom: hoe kies je de juiste monitoring-strategie voor jouw proces?</em></p>
+</div>
+
+            <p>Vraag 1: Hoe snel verandert het proces?</p>
+            <p>Als je proces snel verandert, heb je snelle metingen nodig. Als je proces traag is, mag de meting ook wat tijd kosten.</p>
+            <ul>
+                <li><strong>Snel proces → In-line noodzakelijk</strong><br>Een reactieproces. De samenstelling kan binnen 1 minuut veranderen. Je hebt in-line sensoren nodig die seconde per seconde meten bijvoorbeeld: geleidbaarheid, pH, Zuurstof</li>
+                <li><strong>Traag proces → On-line mogelijk</strong><br>Een uitlaat van een destillatie kolom verandert langzaam van samenstelling. Hier is een on-line kwaliteitscheck bijvoorbeeld van 1x per uur meer dan voldoende. Een sample-transport vertraging van 5 minuten heeft weinig impact.</li>
+            </ul>
+            <p>Vraag 2: Wat zijn de kosten van een afwijking?</p>
+            <p>Hoe duur is het als je te laat reageert op een procesafwijking?</p>
+            <ul>
+                <li><strong>Hoge kosten → Investeer in snelle meting</strong><br>Bij productie van hoogwaardige polymeren kost één batch buiten specificatie €100.000. Als een snelle in-line analyzer van €80.000 dit voorkomt, is die binnen 1 batch terugverdiend.</li>
+                <li><strong>Lage kosten → Goedkopere oplossing mag</strong><br>Bij productie van bulkchemicaliën (zoutzuur, natriumhydroxide) zijn de marges laag. Hier is een lab-controle (at-line) voldoende.</li>
+            </ul>
+            <p>Vraag 3: Hoe kritisch is de proces analyser?</p>
+            <p>Gaat het om een proces veiligheid of om product kwaliteit? Dan is betrouwbaarheid erg belangrijk.</p>
+            <p><strong>Safety-kritische applicatie → Redundant analysesysteem</strong><br>Bij een procesfornuis wordt de zuurstofconcentratie in de verbrandingslucht continu gemeten. Te weinig zuurstof leidt tot onvolledige verbranding en gevaarlijke CO-vorming. Te veel zuurstof is energieverspilling én een veiligheidsrisico.</p>
+            <p>Deze meting is zo kritisch dat er een SIL-classificatie (Safety Integrity Level) aan wordt toegekend. Dit betekent in de praktijk:</p>
+            <ul>
+                <li>Redundante sensoren: minimaal twee onafhankelijke zuurstofmeters</li>
+                <li>Automatische noodstop bij afwijking</li>
+                <li>Regelmatige functionele tests volgens een vast schema</li>
+                <li>Uitgebreide documentatie van onderhoud en kalibratie</li>
+            </ul>
+            <p>Bij SIL-toepassingen kies je meestal voor in-line of on-line met zeer korte sample-lijnen, zodat de reactietijd minimaal is.</p>
+            <p><strong>Productkwaliteit → </strong><br>ISO-genormeerde kwaliteitsmetingen worden met behulp van at-line (Lab) analysers uitgevoerd.. On-line analysers kunnen worden toegepast indien overeenstemming van klanten en leveranciers bijvoorbeeld Ethyleen levering via een pijpleiding.</p>
+            <p><strong>Vraag 4: schadelijkheid van het monster</strong></p>
+            <p>Sommige processtromen bevatten stoffen die giftig, corrosief of brandbaar zijn. Dit beïnvloedt waar je de analyzer plaatst.</p>
+            <ul>
+                <li><strong>Gevaarlijk monster → On-line in veilige omgeving</strong><br>Bij meting van H₂S (zwavelwaterstof) of benzeen wil je het sample zo min mogelijk door de plant leiden. De analyzer staat in een geventileerd analyzerhuis, vaak buiten de ATEX-zone. Het sample wordt via een gesloten systeem aangevoerd en na meting veilig afgevoerd of teruggevoerd naar het proces.</li>
+                <li><strong>Onschadelijk monster → In-line of at-line mogelijk</strong><br>Bij meting van pH in koelwater of zuurstof in lucht is er weinig risico. Hier kan een in-line sensor direct in de leiding, of een at-line analyzer op het platform naast het proces.</li>
+            </ul>
+            <p>Praktische overweging: bij gevaarlijke stoffen weegt veiligheid zwaarder dan snelheid. Liever een iets langere sample-tijd in een veilige omgeving dan een snelle meting waarbij technici risico lopen bij onderhoud.</p>
+            <p>Vraag 5: Hoe complex is het onderhoud?</p>
+            <p>Wie gaat dit onderhouden, hoe vaak, en hoe moeilijk is het? Je hebt niet altijd de keuze, maar als die mogelijkheid er wel is wordt dit meegenomen.</p>
+            <ul>
+                <li><strong>Eenvoudig onderhoud</strong><br>Een pH-sensor in een waterleiding is robuust. Een technicus kan 1x per maand controleren, kalibreren duurt 30 minuten.</li>
+                <li><strong>Complex onderhoud </strong><br>Een GC heeft maandelijks onderhoud nodig: chromatogram-check, draaggas-wissel, kalibratie met test-gas. </li>
+            </ul>
+
+            <h3 style="margin-top: 30px;">2.7 Integratie van beide methoden: Het beste van twee werelden</h3>
+            <p>Waarom niet kiezen tussen labsamples en een continu meting?</p>
+            <p>In de praktijk zie je soms dat beide methoden worden gebruikt. Deze combinatie pakt het beste van beide: je hebt de snelheid van analyzers én de verificatie door een labanalyse.</p>
+            <p>Als technicus betekent dit dat je systemen onderhoudt waarbij beide methoden elkaar aanvullen.</p>
+            <p>Continu meting voor dagelijkse controle, lab voor verificatie</p>
+            <ul>
+                <li><strong>Primaire procesregeling via continuous systems</strong><br>Continue meetsystemen leveren 24/7 data voor automatische procesregeling en om operators te helpen. Deze systemen zijn ingericht voor snelle respons en hoge beschikbaarheid.</li>
+                <li><strong>Periodieke verificatie via lab</strong><br>Labsamples worden gebruikt om de analyzers te checken, en voor parameters die niet continu gemeten worden.</li>
+            </ul>
+
+<div style="margin: 16px 0;">
+    <p style="background: #e8f5e9; padding: 12px; border-left: 4px solid #4caf50; margin: 0;"><strong>&#128214; Praktijkvoorbeeld</strong></p>
+    <div style="background: #f5f5f5; padding: 16px; border-left: 4px solid #bdbdbd;">
+        <p style="margin: 0;">Raffinaderij met beide methoden</p>
+    </div>
+</div>
+            <p>Catalytic cracker monitoring:</p>
+            <ul>
+                <li>Continuous systems:</li>
+                <li>Samenstelling voeding (koolwaterstoffen C4-C12): On-line GC elke 15 minuten</li>
+                <li>Proces-optimalisatie: Automatische temperatuur/druk-regeling op basis van continue data</li>
+                <li>Lab verificatie:</li>
+                <li>Gedetailleerde koolwaterstof-analyse: GC 1x per dag</li>
+                <li>Katalysator-activiteit: Gespecialiseerde lab-tests 1x per week</li>
+                <li>Wettelijke samples: Officiële testmethoden voor milieu-rapportage</li>
+                <li>Voordelen van deze aanpak:</li>
+                <li>Het proces draait optimaal 24/7 op basis van continue data</li>
+                <li>Het lab controleert of de continue metingen de juiste resultaten geven. </li>
+                <li>Wettelijke eisen worden gehaald zonder dat de procesefficiency eronder lijdt</li>
+            </ul>
+            <p><strong>Hoe werk je met beide methoden?</strong><br>Door regelmatig te vergelijken met lab-metingen kun je zien of er een verschil is tussen een lab resultaat en de analyser. Als het verschil tussen analyzer en lab groter wordt dan de toegestane afwijking, moet geprobeerd worden de oorzaak van het verschil te achterhalen.</p>
+
+        </section>
+        <section class="item3" style="margin-top: 50px;">
+            <div class="zadkine-navigation-button grow"><a style="display: block; white-space: normal;" href="/courses/75002/pages/ana-m3-h2-monstername.html_SAM"> &#128221; Samenvatting &amp; Reflectie 3.2 </a></div>
+            <div class="zadkine-navigation-button grow"><a style="display: block; white-space: normal;" href="/courses/75002/pages/ana-m3-h3-sample-conditioning.html"> &#128073; Hoofdstuk 3.3 </a></div>
+            <div class="zadkine-navigation-button grow"><a style="display: block; white-space: normal;" href="/courses/75002/pages/ana-m3-overzicht.html"> &#128072; Module 3 overzicht </a></div>
+        </section>
+        <section class="item4"><img src="media/tcr-logo.png" alt="TCR logo" style="max-width: 100px; display: block; margin: 20px 0;" /></section>
+    </div>
+</div>
+    </div>
+
+    <div class="feedback-bar">
+        <p>Feedback op deze pagina?</p>
+        <div class="feedback-buttons">
+            <a href="mailto:admin@teacher4technical.nl?subject=Feedback%20ANA%20M3%20-%20M3.2%20%E2%80%94%20Monstername" class="btn-feedback">Feedback geven</a>
+            <a href="index.html" class="btn-view-feedback">Terug naar overzicht</a>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANA Module 3 — TCR Preview</title>
+    <link rel="stylesheet" href="style.css?v=2">
+    <style>
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+        .chapter-card {
+            border: 2px solid #e0e0e0;
+            border-radius: 12px;
+            padding: 24px;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .chapter-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+        }
+        .chapter-card h3 {
+            color: #006445;
+            margin-top: 0;
+            font-size: 20px;
+        }
+        .chapter-card p {
+            color: #555;
+            font-size: 14px;
+            margin-bottom: 16px;
+        }
+        .chapter-card .links {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+        .chapter-card .links a {
+            display: inline-block;
+            padding: 8px 16px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 600;
+            transition: opacity 0.2s;
+        }
+        .chapter-card .links a:hover {
+            opacity: 0.85;
+        }
+        .btn-theorie { background: #006445; color: white !important; }
+        .btn-samenvatting { background: #b0bd36; color: white !important; }
+        .btn-overzicht { background: #9c27b0; color: white !important; display: inline-block; padding: 10px 20px; border-radius: 8px; text-decoration: none; font-weight: 600; margin-bottom: 20px; }
+        .coming-card {
+            border: 2px dashed #ddd;
+            border-radius: 12px;
+            padding: 24px;
+            text-align: center;
+            color: #999;
+        }
+    </style>
+</head>
+<body>
+    <div class="preview-banner">
+        <img src="media/tcr-logo.png" alt="TCR" style="height: 30px; vertical-align: middle; margin-right: 10px;">
+        TCR Analyser Techniek — Preview omgeving
+    </div>
+    <div class="page-wrapper">
+        <h1 style="color: #006445; margin-bottom: 6px;">Module 3 — Technische documentatie & monstername</h1>
+        <p style="color: #777; margin-bottom: 20px;">ANA Analyser Techniek — Techniek College Rotterdam</p>
+
+        <a href="ana-m3-overzicht.html" class="btn-overzicht">Module 3 Overzicht</a>
+
+        <div class="card-grid">
+            <div class="coming-card">
+                <h3 style="color: #999;">3.1 Technische documentatie</h3>
+                <p>P&ID-schema's, ISA-symbolen, leidingspecificaties</p>
+                <p><em>Binnenkort beschikbaar</em></p>
+            </div>
+            <div class="chapter-card" style="border-color: #9c27b0;">
+                <h3>3.2 Monstername</h3>
+                <p>Labsamples vs. continue meting, in-line/at-line/on-line strategieen, beslisboom voor strategiekeuze.</p>
+                <div class="links">
+                    <a href="ana-m3-h2-monstername.html" class="btn-theorie">Theorie</a>
+                    <a href="ana-m3-h2-samenvatting.html" class="btn-samenvatting">Samenvatting</a>
+                </div>
+            </div>
+            <div class="chapter-card" style="border-color: #9c27b0;">
+                <h3>3.3 Sample conditioning</h3>
+                <p>Filtratie, temperatuurregeling, drukregeling, de gouden regel van representativiteit.</p>
+                <div class="links">
+                    <a href="ana-m3-h3-sample-conditioning.html" class="btn-theorie">Theorie</a>
+                    <a href="ana-m3-h3-samenvatting.html" class="btn-samenvatting">Samenvatting</a>
+                </div>
+            </div>
+            <div class="coming-card">
+                <h3 style="color: #999;">3.4 Onderhoud & troubleshooting</h3>
+                <p>Preventief onderhoud, diagnose, probleemoplossing</p>
+                <p><em>Binnenkort beschikbaar</em></p>
+            </div>
+        </div>
+
+        <div style="margin-top: 30px;">
+            <a href="../index.html" style="color: #006445; text-decoration: none; font-weight: 600;">← Terug naar alle modules</a>
+        </div>
+    </div>
+</body>
+</html>

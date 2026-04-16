@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M3.3 — Sample conditioning — TCR Preview</title>
+    <link rel="stylesheet" href="style.css?v=3">
+</head>
+<body>
+    <div class="preview-banner">
+        <img src="media/tcr-logo.png" alt="TCR" style="height: 30px; vertical-align: middle; margin-right: 10px;">
+        TCR Analyser Techniek — Preview omgeving
+    </div>
+    <div class="page-wrapper">
+<div style="max-width: 1140px;">
+    <div class="zadkine-template-container tcr-template-container" style="margin: 0;">
+        <section class="item1" style="margin: 0;">
+            <div class="zadkine-banner"><img src="media/banner-ana-m3.png" alt="Banner ANA Module 3" />
+                <h2>ANA – Module 3</h2>
+            </div>
+
+            <h3 style="margin-top: 30px;">3.1 Leerdoelen</h3>
+            <p>Na het volgen van dit hoofdstuk kun je:</p>
+            <ul>
+                <li>Uitleggen waarom monstervoorbereiding (sample conditionering) nodig is voor betrouwbare metingen</li>
+                <li>Verschillende technieken van monstervoorbereiding benoemen en aangeven wanneer je ze gebruikt</li>
+                <li>Begrijpen waarom het monster representatief moet blijven (de te meten eigenschappen niet mogen veranderen)</li>
+                <li>De belangrijkste technieken toepassen: filtratie, temperatuurregeling en drukregeling</li>
+            </ul>
+
+            <h3 style="margin-top: 30px;">3.2 Van bloedafname naar lab-resultaat: Waarom voorbereiding?</h3>
+            <p>Van proces naar analyzer: Het moet schoon en op de juiste conditie</p>
+            <p>Stel je voor: je gaat naar de huisarts voor een bloedtest. De verpleegkundige neemt een buisje bloed af. Maar wat gebeurt er daarna?</p>
+            <p>De directe methode: Het buisje bloed meteen in het meetapparaat stoppen - maar bloedcellen, stolsels en de verkeerde temperatuur maken dat de meting niet klopt.</p>
+            <p>De professionele methode: Het bloed wordt eerst behandeld - centrifugeren om cellen te scheiden, op de juiste temperatuur brengen, soms een stof toevoegen tegen stolling. Pas dan kan het lab de werkelijke waarden meten.</p>
+            <p>Dit voorbeeld laat zien waarom monstervoorbereiding (sample conditioning) zo belangrijk is in de procesindustrie. Net als bij bloedonderzoek moet een monster uit het proces worden "klaargemaakt" voordat de analyzer betrouwbaar kan meten.</p>
+            <p>De uitdaging: Van procesomstandigheden naar analyzer-eisen</p>
+            <p>Een voorbeeld: Een zuurstofanalyzer heeft specifieke eisen:</p>
+            <ul>
+                <li>Schoon monster (geen vuil)</li>
+                <li>2 bar druk</li>
+                <li>45&deg;C temperatuur</li>
+                <li>Geen gasbellen</li>
+                <li>Maar het proces levert:</li>
+                <li>300&deg;C hete stoom</li>
+                <li>15 bar druk</li>
+                <li>Met stofdeeltjes en oliedruppels</li>
+                <li>Zonder voorbereiding: Analyzer kapot binnen een paar uur door oververhitting en vervuiling.</li>
+                <li>Met goede voorbereiding: Jarenlang betrouwbare metingen.</li>
+                <li>Als technicus ben jij verantwoordelijk voor deze monstervoorbereiding - dat is de brug tussen het proces en de analyzer.</li>
+                <li>Waarom is monstervoorbereiding zo belangrijk?</li>
+                <li>Bescherming: Voorkomt schade aan gevoelige onderdelen van de analyzer</li>
+                <li>Nauwkeurigheid: Verwijdert storingen die verkeerde metingen veroorzaken</li>
+                <li>Representatief blijven: Het monster moet dezelfde eigenschappen houden</li>
+                <li>Betrouwbaarheid: Zorgt voor constante meetomstandigheden</li>
+            </ul>
+
+            <h3 style="margin-top: 30px;">3.3 De gouden regel: Representatief blijven</h3>
+            <p>Het belangrijkste principe van monstervoorbereiding</p>
+
+<div style="text-align: left; margin: 20px 0;">
+    <img src="media/ana-m3-h3-infographic1-gouden-regel-representatief.png" alt="De gouden regel: representatief blijven" style="max-width: 620px; width: 100%; height: auto; border-radius: 4px;" loading="lazy" />
+    <p style="font-size: 0.85rem; color: #666; margin-top: 6px;"><em>De gouden regel van monstervoorbereiding: verander alleen wat nodig is</em></p>
+</div>
+
+            <p>De gouden regel is: "Verander alleen wat nodig is voor de analyzer, behoud alles wat belangrijk is voor de meting."</p>
+            <p>Dit betekent dat je een balans moet vinden tussen:</p>
+            <ul>
+                <li>De analyzer beschermen</li>
+                <li>Het monster niet veranderen</li>
+                <li>Voorbeeld: pH-meting in een reactor</li>
+                <li>Het proces:</li>
+                <li>Temperatuur: 180&deg;C (veel te heet voor de pH-sensor)</li>
+                <li>Druk: 80 bar (te hoog voor het systeem)</li>
+                <li>Monster: Waterige oplossing met opgeloste stoffen</li>
+                <li>Wat moet je doen?</li>
+                <li>Moet veranderen: Temperatuur en druk (anders gaat de analyzer kapot)</li>
+                <li>Mag niet veranderen: pH-waarde</li>
+                <li>Het gevaar: Als je te snel afkoelt, kunnen stoffen neerslaan en dan klopt de pH-meting niet meer!</li>
+                <li>De oplossing:</li>
+                <li>Langzaam afkoelen naar 50&deg;C (zodat alles in balans blijft)</li>
+                <li>Druk verlagen naar &lt;10 bar (zonder schokken)</li>
+                <li>Het monster snel naar de analyzer brengen (korte verblijftijd zodat het representatief is)</li>
+                <li>Monster terugleiden naar het proces</li>
+                <li>Tijd is belangrijk!</li>
+            </ul>
+            <p>Hoe langer het monster onderweg is naar de analyzer, hoe groter de kans dat er iets verandert. Bovendien is het belangrijk de tijd tussen sample name en de uiteindelijke meting zo kort mogelijk is:</p>
+            <ul>
+                <li>Condensatie kan optreden</li>
+                <li>Stoffen kunnen neerslaan</li>
+                <li>Stoffen kunnen aan de leidingwand blijven plakken</li>
+                <li>Praktijkvoorbeeld: Ammoniakgas meten</li>
+                <li>Het proces: 200&deg;C hete afgasstroom met 500 ppm NH&#8323; (ammoniak)</li>
+                <li>Probleem zonder goede voorbereiding:</li>
+                <li>Lange, koude leiding naar de analyzer </li>
+                <li>Ammoniak blijft plakken aan de koude leidingwanden</li>
+                <li>De analyzer meet maar 200 ppm (terwijl er 500 ppm in zit!)</li>
+                <li>Oplossing met goede voorbereiding:</li>
+                <li>Verwarmde leiding op 180&deg;C (voorkomt condensatie en plakken)</li>
+                <li>Verblijftijd in de leiding minimaliseren (bij voorkeur minder dan 1 minuut transport)</li>
+                <li>Speciale coating in de leiding (voorkomt plakken)</li>
+                <li>Resultaat: De analyzer meet correct 500 ppm</li>
+            </ul>
+
+            <h3 style="margin-top: 30px;">3.4 Filtratie en scheiding: Vuil eruit!</h3>
+            <p>Waarom filteren? Een dagelijkse uitdaging in de plant</p>
+            <p>Stel je voor: je werkt in een raffinaderij en je analyzer moet continu de samenstelling van een gasstroom meten. Maar die gasstroom komt rechtstreeks uit het proces - en daar zit van alles in wat er eigenlijk niet in hoort. De productstroom zal ook vuil bevatten, Roestdeeltjes van oude leidingen, stofjes uit de lucht, katalysator-deeltjes van de reactor, condensaatdruppels. Als al dat vuil rechtstreeks je analyzer ingaat, dan duurt het niet lang voordat je problemen krijgt.</p>
+            <p>Filtratie betekent simpelweg: al dat vuil eruit halen voordat het schade kan aanrichten. Denk aan het verschil tussen kraanwater drinken in Nederland (gefilterd, schoon) en water drinken uit een sloot (ongefilterd, vol troep). Het principe is hetzelfde: je wilt alleen het zuivere deel hebben.</p>
+            <p>Maar waarom is dit zo belangrijk? Vaste deeltjes in je monster zijn echt een probleem. Ze kunnen reduceers, naaldventielen, flowmeters, leidingen, en kleppen verstoppen, waardoor er geen flow meer is en daardoor die niet meer goed werken. Ze kunnen je sensor bedekken met een laagje troep, waardoor die niet meer goed meet. En ze kunnen de meting zelf verstoren - bijvoorbeeld door licht te blokkeren in een optische analyzer.</p>
+            <p>Zwevende deeltjes - denk aan stof, roest of zand - zijn vooral gevaarlijk voor gevoelige analyzers. Een sensor die bedekt raakt met een laagje vuil, zal een afwijkende meetwaarde kunnen geven. Optische vensters (waar licht doorheen moet) kunnen bekrast raken, waardoor de analyzer onbruikbaar wordt. En soms zorgen die deeltjes voor valse alarmen, omdat de analyzer denkt dat er iets mis is terwijl het gewoon vuil is.</p>
+
+<div style="text-align: left; margin: 20px 0;">
+    <img src="media/ana-m3-h3-foto9-sample-filter-swagelok.jpg" alt="Sample filter Swagelok" style="max-width: 350px; width: 100%; height: auto; border-radius: 4px;" loading="lazy" />
+    <p style="font-size: 0.85rem; color: #666; margin-top: 6px;"><em>Sample filter (Swagelok) – beschermt de analyzer tegen vaste deeltjes uit het proces</em></p>
+</div>
+
+            <p>Verschillende soorten filters - van grof naar fijn</p>
+            <p>Net zoals je bij koffiezetten verschillende filters hebt (grove zeef voor grote stukken, fijn filter voor de koffie), gebruik je in de plant ook verschillende soorten filters. Elk type heeft zijn eigen taak.</p>
+            <p>De grove filtering (alles groter dan 100 - 500 &mu;m (0,1 tot 0,5 mm), is je eerste verdedigingslinie. Dit zijn vaak simpele zeeffilters of mandfilters - denk aan een vergiet in de keuken, maar dan voor industriële toepassingen. Deze filters halen de grote brokken eruit: stukjes roest, grote stofdeeltjes, brokjes uit de leiding. Ze beschermen vooral pompen en andere grove apparatuur. Bijvoorbeeld: bij het verpompen van afvalwater kunnen er zandkorrels in het systeem komen. Die wil je eruit hebben voordat ze je pomp kapot maken.</p>
+            <p>Dan heb je de fijne filtering (tussen 10 en 100 &mu;m). Dit zijn vaak patroonfilters - cilindervormige filters die je kunt verwisselen - of gesinterde metaalfilters (metaal met hele kleine gaatjes). Deze filters beschermen precisie-onderdelen zoals flow-regelaars. Die regelaars hebben hele nauwkeurige klepjes die al kapot kunnen gaan van kleine deeltjes. Deze filters zitten vaak vlak voor dat soort gevoelige apparatuur.</p>
+            <p>De zeer fijne filtering (kleiner dan 10 &mu;m, zo klein dat je het niet meer kunt zien) is voor de meest kwetsbare analyzers. Dit zijn vaak membraanfilters - dunne schijfjes met microscopisch kleine gaatjes. Deze gebruik je bijvoorbeeld bij gaschromatografie, waar zelfs hele kleine deeltjes schade kunnen veroorzaken aan (injectie) kleppen, of verstoppen van capillaire leidingen.</p>
+
+<div style="margin: 16px 0;">
+    <p style="background: #e8f5e9; padding: 12px; border-left: 4px solid #4caf50; margin: 0;"><strong>&#128214; Praktijkvoorbeeld</strong></p>
+    <div style="background: #f5f5f5; padding: 16px; border-left: 4px solid #bdbdbd;">
+        <p style="margin: 0;">Zuurstof meting (het meten van zuurstof opgelost in water)</p>
+    </div>
+</div>
+            <p>De situatie:</p>
+            <ul>
+                <li>Je wilt zuurstof meten in afvalwater</li>
+                <li>De vloeistof zit vol vaste deeltjes</li>
+                <li>Hoe pak je dit aan?</li>
+                <li>Stap 1 - Grove scheiding: Cycloonafscheider</li>
+                <li>Haalt 90% van het grove vuil weg.</li>
+            </ul>
+            <p>Werkt op basis van centrifugaalkracht (draaibeweging): de vloeistof wordt in een spiraal rondgedraaid, waardoor de deeltjes naar buiten worden geslingerd en naar beneden vallen, terwijl de schone samplevloeistof in het midden wordt afgetapt.</p>
+            <p>Stap 2 - Fijne filtering: Patroonfilter 250 &mu;m</p>
+            <p>Haalt de resterende kleinere deeltjes weg (die door de cycloon zijn gekomen)</p>
+            <p>Patroonfilter is een cilindervormige filter die je kunt vervangen als hij vol zit.</p>
+            <p>Waarom dit werkt:</p>
+            <ul>
+                <li>De opgeloste zuurstof gaat door alle filters heen</li>
+                <li>De vaste deeltjes worden tegengehouden (die zouden de sensor kunnen beschadigen)</li>
+                <li>Het monster blijft representatief: de opgeloste zuurstofconcentratie blijft hetzelfde!</li>
+                <li>Scheiding van gas en vloeistof</li>
+                <li>Soms zit er gas én vloeistof in je monster, maar je wilt er maar één van meten.</li>
+                <li>Voorbeeld: Waterstof in zuurstof meten</li>
+                <li>Probleem: De analyzer wil alleen gas, maar het monster bevat waterdruppeltjes</li>
+            </ul>
+            <p>Oplossing: Afscheidingsvat met druppelvanger (een klein vat waar het gas langzamer gaat stromen, waardoor de druppels naar beneden zakken en worden afgetapt)</p>
+            <p>Eventueel kan het gas voor dit scheidingsvat worden afgekoeld om condensatie te bevorderen</p>
+            <p>Resultaat: Droge gasstroom die representatief is in de gasfase, eventueel moet het resultaat gecompenseerd worden voor de verwijderde hoeveelheid water</p>
+            <p>Belangrijke regel bij koelen in algemeen: De koeler mag alleen de stoffen weghalen die je niet wilt meten. Wat je wel wilt meten, moet wel in het te meten monster blijven!</p>
+
+            <h3 style="margin-top: 30px;">3.5 Temperatuurregeling: De juiste warmte</h3>
+            <p>Waarom temperatuur zo'n grote rol speelt</p>
+            <p>Temperatuur is eigenlijk in het algemeen een belangrijk punt. Analyzers hebben precies hetzelfde als mensen - ze hebben hun "juiste temperatuur" nodig om goed te functioneren.</p>
+            <p>Maar het gaat verder dan alleen de analyzer gelukkig houden, daarvoor is het nodig dat het monstername systeem de sample temperatuur aanpast aan de benodigde specificatie van de analyser zonder de concentratie van de te meten componenten te veranderen.</p>
+            <p>Dit alles doe je ten behoeve van de <strong>betrouwbaarheid: </strong></p>
+            <p><strong>Ten eerste</strong> bepaalt het hoe goed je analyzer meet – Door de temperatuur van het monster binnen de gespecificeerde grenzen van het analyser systeem te houden waarborg je de nauwkeurigheid.</p>
+            <p><strong>Ten tweede</strong> bepaalt het of de chemische samenstelling van het monster niet veranderd.</p>
+            <p>Voorbeeld<strong>:</strong> emissiemeting van rookgassen</p>
+            <p>Rookgassen bevatten veel water, dus kans op condensatie.</p>
+            <p>Sommige componenten kunnen makkelijk oplossen in water (SOx)</p>
+            <p>Oplossing: Sample ruim boven het dauwpunt houden door gebruik te maken van een verwarmde leiding.</p>
+            <p><strong>Ten derde</strong> moeten de fysische eigenschappen van het monster binnen de limieten van complete meetsysteem blijven. Denk aan viscositeit, stollen, bevriezen(water) van producten, ontgassing, etc.</p>
+            <p>Voorbeeld<strong>:</strong> viscositeitsmeting van stookolie</p>
+            <p>Bij een lagere temperatuur van stookolie neemt de viscositeit toe.</p>
+            <p>Het monster kan niet meer naar de analyser verpompt worden.</p>
+            <p>Oplossing: temperatuur van het monster op de juiste temperatuur houden.</p>
+            <p><strong>Ten slotte</strong> is een analyzer die te warm wordt is slijtage gevoeliger, en gaat mogelijk afwijken en kan daardoor sneller defect raken.</p>
+            <p>Voorbeeld<strong>: </strong>pH meting<strong> </strong>van water</p>
+            <p>De maximale gebruikstemperatuur van pH elektrodes ligt ronde de 80&deg;C</p>
+            <p>Boven deze temperatuur zal de levensduur sterk afnemen</p>
+            <p>Oplossing: Afkoelen naar een temperatuur onder de maximale gebruikstemperatuur.</p>
+            <p>Hoe regel je de temperatuur?</p>
+            <p>Afkoelen of opwarmen</p>
+            <p>Methode: Warmtewisselaar</p>
+            <p>Een warmtewisselaar is een apparaat dat warmte overdraagt van het ene medium naar het andere, zonder dat de media direct met elkaar in contact komen.</p>
+            <p>Procesmonster loopt door een warmtewisselaar</p>
+            <p>Koelwater, lucht om bijvoorbeeld af te koelen, en olie- of waterbaden om sample temperatuur omhoog te brengen.</p>
+            <p>Afhankelijk van de applicatie: Niet te snel afkoelen!</p>
+            <p>Te snelle afkoeling kan schokeffecten geven</p>
+            <p>Stoffen kunnen plotseling neerslaan</p>
+            <p>Het monster wordt dan niet meer representatief</p>
+            <p>Op temperatuur houden</p>
+            <p>Methode: Verwarmde leidingen</p>
+            <p>Elektrische verwarmingskabels of stoom om de sample leiding warm te houden.</p>
+            <p>Isolatie eromheen om warmte vast te houden (sample leiding)</p>
+            <p>Temperatuursensor en regelaar om de temperatuur constant te houden (kastverwarming)</p>
+
+<div style="margin: 16px 0;">
+    <p style="background: #e8f5e9; padding: 12px; border-left: 4px solid #4caf50; margin: 0;"><strong>&#128214; Praktijkvoorbeeld</strong></p>
+    <div style="background: #f5f5f5; padding: 16px; border-left: 4px solid #bdbdbd;">
+        <p style="margin: 0;">Vochtmeting gas</p>
+    </div>
+</div>
+            <p>De situatie:</p>
+            <ul>
+                <li>Aardgas bij -20&deg;C en 40 bar</li>
+                <li>Water kan kristallen vormen bij deze condities</li>
+                <li>De analyzer heeft gas nodig bij de juiste condities voor de analyser (zonder ijskristallen)</li>
+                <li>Wat moet je doen?</li>
+                <li>Druk verlagen naar 2 bar</li>
+                <li>Gecontroleerd opwarmen naar +20&deg;C</li>
+                <li>Het aanwezige water zal bij die condities in de gasfase zijn.</li>
+                <li>Nu kan de analyzer het water meten</li>
+                <li>Het monster blijft representatief (dezelfde hoeveelheid water, alleen andere vorm)</li>
+                <li>Vochtmeting in gas - snelheid is alles                                                                                                                                                                                                               </li>
+            </ul>
+            <ol>
+                <li>Druk zo snel mogelijk verlagen: Reduceer de druk, verwarmd en zo dicht mogelijk bij het sample punt. Hiermee voorkom je dat hoge druk door de hele installatie loopt en verminder je het risico op condensatie en ijsvorming (denk aan aardgas bij -20&deg;C en 40 bar, waar ijskristallen snel kunnen ontstaan).</li>
+                <li>Altijd boven het dauwpunt blijven: Gebruik verwarmde leidingen zodat het monster op geen enkel punt in het sample systeem onder het dauwpunt komt. Na de drukval warm je het gas op om fase-overgangen te voorkomen.</li>
+                <li>Volume van het sample systeem minimaliseren – Houd het totale volume zo klein mogelijk om een snelle responstijd te garanderen. Hoe compacter het systeem, hoe sneller veranderingen in het procesgas zichtbaar worden bij de analyzer.</li>
+            </ol>
+
+            <h3 style="margin-top: 30px;">3.6 Drukregeling: Constante druk = Betrouwbare meting</h3>
+            <p>De onzichtbare kracht die alles bepaalt</p>
+            <p>Druk is een van die dingen die je niet ziet, maar die enorm belangrijk zijn. Denk aan een fietsband: met te weinig druk fiets je zwaar en krijg je een lekke band, met te veel druk knalt hij uit elkaar. In de plant is het precies hetzelfde verhaal, maar dan met veel grotere gevolgen.</p>
+            <p>In een typisch proces heb je vaak behoorlijk hoge drukken - denk aan 10, 20, soms wel 100 bar. Dat is 100 keer de luchtdruk die je normaal hebt! Maar je analyzer? Die kan daar meestal helemaal niet tegen. Die is ontworpen voor lage drukken, vaak maar 2 of 3 bar. Als je die hoge procesdruk rechtstreeks op je analyzer zet, dan knalt hij uit elkaar.</p>
+            <p>Maar druk doet nog veel meer. Het bepaalt de veiligheid (te hoge druk is levensgevaarlijk), het bepaalt soms hoe goed je analyzer meet (wisselende druk = wisselende meetwaarden), en het bepaalt zelfs of iets gas blijft of juist vloeistof wordt. Hoge druk kan een gas laten condenseren tot vloeistof, lage druk kan lichte delen van een vloeistof laten te verdampen.</p>
+            <p>Laten we kijken waarom drukregeling zo cruciaal is en hoe je het goed doet.</p>
+
+<div style="text-align: left; margin: 20px 0;">
+    <img src="media/ana-m3-h3-infographic3-drukregeling-multistage.png" alt="Drukregeling single-stage vs multi-stage" style="max-width: 620px; width: 100%; height: auto; border-radius: 4px;" loading="lazy" />
+    <p style="font-size: 0.85rem; color: #666; margin-top: 6px;"><em>Vergelijking single-stage vs. multi-stage drukregeling</em></p>
+</div>
+
+            <p>Drie redenen voor drukregeling</p>
+            <ol>
+                <li>Bescherming van de analyzer</li>
+            </ol>
+            <p>De meeste analyzers kunnen niet tegen hoge druk:</p>
+            <ul>
+                <li>Ze zijn ontworpen voor bijvoorbeeld 2 bar</li>
+                <li>Het proces heeft vaak 10-100 bar</li>
+                <li>Te hoge druk = analyzer kapot!</li>
+            </ul>
+            <p>Oplossingen: Drukregelaar die de druk verlaagt, in combinatie met een veiligheidsventiel die de achterliggende installatie beschermt tegen een te hoge druk.</p>
+            <ol>
+                <li>Constante meetomstandigheden</li>
+            </ol>
+            <p>Voor een betrouwbare meting in gassen kan het nodig zijn dat de druk constant is:</p>
+            <ul>
+                <li>Wisselende druk = wisselende dichtheid</li>
+                <li>Wisselende dichtheid = wisselende meetwaarden</li>
+                <li>Constante druk = betrouwbare meting</li>
+                <li>In sommige gevallen beschikt de analyser over een druk en temperatuur compensatie.</li>
+            </ul>
+            <ol>
+                <li>Fase-gedrag beïnvloeden</li>
+            </ol>
+            <p>Net als de temperatuur kan de druk bepalen of iets in de gas- of vloeistoffase  is:</p>
+            <ul>
+                <li>Hoge druk: Gassen kunnen condenseren tot vloeistof</li>
+                <li>Lage druk: Vloeistoffen kunnen verdampen tot gas</li>
+                <li>Praktijkvoorbeeld: Propaan van 40 naar 2 bar kamertemperatuur</li>
+                <li>Het probleem:</li>
+                <li>Propaan in de leiding: 40 bar (vloeistoffase)</li>
+                <li>Analyzer heeft nodig: 2 bar (gasfase)</li>
+                <li>Verschil: er moet 38 bar gereduceerd worden.</li>
+                <li>Methode 1: Enkel-traps (één stap, single stage)</li>
+                <li>Eén drukregelaar van 40 naar 2 bar direct</li>
+                <li>Nadelen:</li>
+                <li>Grote drukval in één keer kan instabiliteit (minder nauwkeurig) geven</li>
+                <li>ijsvorming door expansie (Joule-Thomson effect - gas koelt af als druk daalt)</li>
+                <li>Methode 2: Twee-traps (twee staps, dual stage)</li>
+                <li>Eerste regelaar: 40 → 10 bar</li>
+                <li>Tweede regelaar: 10 → 2 bar</li>
+                <li>Voordelen:</li>
+                <li>Stabielere druk</li>
+                <li>Minder koeling</li>
+                <li>Nauwkeuriger</li>
+                <li>Veiliger</li>
+                <li>Wanneer twee-traps beter is:</li>
+            </ul>
+            <p>Bij grote drukverschillen, zoals propaan van 40 naar 2 bar of ijkgassen van 200 bar, geef je de voorkeur aan een tweetraps (dual-stage) drukregelaar:</p>
+            <p><strong>Stabielere uitgangsdruk:</strong> De tweede trap compenseert automatisch de variatie uit de eerste trap. Bij een single-stage regelaar gaat de uitgangsdruk schommelen naarmate de inlaatdruk verandert, bij twee traps blijft deze nagenoeg constant.</p>
+            <p><strong>Minder afkoeling, minder kans op dichtvriezen:</strong> Wanneer gas door een drukregelaar gaat, daalt de temperatuur door de plotselinge drukval. Dit heet het <em>Joule-Thomson-effect</em>: hoe groter de drukval, hoe sterker de afkoeling. Bij voldoende afkoeling bevriest waterdamp in het gas en kan de regelaar blokkeren ("dichtvriezen"). Twee kleinere drukstappen spreiden dit effect, waardoor de temperatuurdaling per stap veel kleiner is en het risico op ijsvorming sterk afneemt.</p>
+            <p><strong>Nauwkeurigere</strong> <strong>regeling</strong>: Doordat de tweede trap op een al gestabiliseerde lagere druk werkt, zijn drukschommelingen bij wisselende flow minimaal. Dit is essentieel bij gasanalyse en meetapparatuur.</p>
+            <p><strong>Minder</strong> <strong>kans</strong> <strong>op</strong> <strong>drukkruip</strong>: Bij een single-stage regelaar kan de druk aan de uitgang langzaam oplopen doordat het regelventiel niet 100% dicht zit. Dit noem je <em>drukkruip</em> (in het Engels: "creep"). De tweede trap vangt dit op, waardoor de uitgangsdruk stabiel blijft.</p>
+            <p>  <em>Vuistregel:</em> <em>kies</em> <em>altijd</em> <em>twee-traps</em> <em>bij</em> <em>analysegassen,</em> <em>continue</em> <em>processen,</em> <em>temperatuurgevoelige</em> <em>toepassingen</em> <em>en</em> <em>situaties</em> <em>met</em> <em>kans</em> <em>op</em> <em>dichtvriezen.</em></p>
+            <p>Hoe werkt een drukregelaar?</p>
+            <ul>
+                <li>Een drukregelaar is eigenlijk een "slimme kraan" die automatisch opent en sluit:</li>
+                <li>Als de druk te hoog wordt → de kraan gaat een beetje dicht</li>
+                <li>Als de druk te laag wordt → de kraan gaat een beetje open</li>
+                <li>Zo blijft de druk constant</li>
+                <li>Onderdelen:</li>
+                <li>Membraan of balg (voelt de druk)</li>
+                <li>Veer (stelt de gewenste druk in)</li>
+                <li>Ventiel (regelt de doorstroming)</li>
+                <li>Praktijkvoorbeeld: Waterstof meting in gas met drukregeling</li>
+                <li>De situatie:</li>
+                <li>Reactor: 20 bar druk</li>
+                <li>H2 (waterstof)-analyzer: Max 1 bar</li>
+                <li>Monster moet representatief blijven</li>
+                <li>De oplossing:</li>
+                <li>Eerste drukregelaar: 20 → 4 bar (voor het filter)</li>
+                <li>Filter (werkt bij lagere druk beter)</li>
+                <li>Tweede drukregelaar: 4 → 1 bar (voor de analyzer)</li>
+                <li>Waarom deze opzet?</li>
+                <li>De analyzer krijgt constante druk, daarmee een nauwkeurigere meting</li>
+                <li>Bij drukschommelingen in het proces blijft de meting stabiel</li>
+                <li>Veilig: als de eerste regelaar faalt, vangt de tweede het op</li>
+                <li>Het Joule-Thomson effect (gas wordt koud bij drukdaling)</li>
+                <li>Wanneer gas expandeert (druk daalt), koelt het meestal af. Dit kan problemen geven:</li>
+                <li>Condensatie (druppelvorming)</li>
+                <li>Bevriezing</li>
+                <li>Hydraatvorming (ijs-achtige kristallen in gas)</li>
+                <li>Oplossing: Verwarming toevoegen</li>
+                <li>Verwarm de drukregelaar</li>
+                <li>Zo voorkom je condensatie</li>
+                <li>Belangrijk bij drukregeling: Flow!</li>
+                <li>Een drukregelaar werkt alleen goed als er voldoende doorstroming is:</li>
+                <li>Te weinig flow: Druk kan niet stabiel gehouden worden</li>
+                <li>Te veel flow: Drukregelaar kan niet meer regelen</li>
+                <li>Juiste flow: Stabiele druk en representatief monster</li>
+                <li>Praktische tips voor drukregeling:</li>
+                <li>Altijd multi-stage gebruiken bij grote drukverschillen (&gt;10 bar verschil)</li>
+                <li>Controleer regelmatig de ingestelde druk</li>
+                <li>Let op tekenen van problemen:</li>
+                <li>Condensaat na de regelaar (te veel afkoeling)</li>
+                <li>Zwevende druk (regelaar werkt niet goed)</li>
+                <li>Ijsvorming (te koud)</li>
+                <li>Installeer manometers (drukmeter) voor en na de regelaar</li>
+            </ul>
+
+            <h3 style="margin-top: 30px;">3.7 Alles bij elkaar: Een compleet systeem</h3>
+            <p>Van losse onderdelen naar een werkend geheel</p>
+            <p>Tot nu toe hebben we filtratie, temperatuur en druk apart bekeken. Maar in de praktijk werk je nooit met maar één techniek tegelijk. Je hebt ze alle drie nodig, en ze moeten perfect op elkaar afgestemd zijn. Het is een beetje zoals koken: je hebt ingrediënten (filtering), je moet ze op de juiste temperatuur brengen (temperatuurregeling), en je moet de juiste druk gebruiken (denk aan een snelkookpan). Als je één stap verkeerd doet of in de verkeerde volgorde, mislukt je gerecht.</p>
+            <p>De vraag is dus: in welke volgorde doe je wat? En waarom is die volgorde belangrijk?</p>
+            <p>Laten we kijken naar een typische opbouw van een compleet monstervoorbereidingssysteem. Dit is geen wet van Meden en Perzen, maar het is wel een logische manier die in de praktijk vaak wordt gebruikt.</p>
+            <p>Typische opbouw van een monstervoorbereidingssysteem, maar ook afhankelijk van de te meten:</p>
+            <ul>
+                <li>Stap 1: Grove filtering</li>
+                <li>Direct na het aftappunt (zo vroeg mogelijk in het systeem)</li>
+                <li>Haalt grote deeltjes weg (&gt;100 &mu;m)</li>
+                <li>Beschermt de rest van het systeem tegen grove vervuiling</li>
+                <li>Stap 2: Temperatuurregeling</li>
+                <li>Afkoelen of opwarmen (met warmtewisselaar of verwarmde leiding)</li>
+                <li>Afhankelijk van wat het proces en de analyzer nodig hebben (bijv. van 300&deg;C naar 45&deg;C)</li>
+                <li>Stap 3: Fijne filtering</li>
+                <li>Net voor de drukverlaging</li>
+                <li>Bescherming tegen fijne deeltjes (&lt;10 &mu;m)</li>
+                <li>Stap 4: Eerste drukverlaging</li>
+                <li>Van procesdruk naar een lagere tussendruk (bijvoorbeeld van 40 naar 10 bar)</li>
+                <li>Multi-stage aanpak bij grote drukverschillen</li>
+                <li>Stap 5: Tweede drukverlaging</li>
+                <li>Naar de uiteindelijke analyzerdruk (bijvoorbeeld van 10 naar 2 bar)</li>
+                <li>Fijnregeling voor stabiele meetomstandigheden</li>
+                <li>Stap 6: Fijne filtering</li>
+                <li>Net voor de analyzer (laatste beschermingslaag)</li>
+                <li>Laatste bescherming tegen fijne deeltjes (&lt;1 &mu;m)</li>
+                <li>Praktijkvoorbeeld: Complete setup voor emissiemeting in rookgas</li>
+                <li>Het proces:</li>
+                <li>Rookgas van een verbrandingsinstallatie</li>
+                <li>Temperatuur: 400&deg;C</li>
+                <li>Druk: 1.2 bara (lichte overdruk)</li>
+                <li>Bevat stof, roet en waterdamp</li>
+                <li>Zuurstof, CO, SO2, en NOX moet gemeten worden </li>
+                <li>De analyzer:</li>
+                <li>Heeft schoon, droog gas nodig</li>
+                <li>Temperatuur: 60&deg;C</li>
+                <li>Druk: 1.05 bara</li>
+                <li>De complete oplossing:</li>
+                <li>Stap 1: Aftappunt met grove filter</li>
+            </ul>
+            <p>Sintered metal filter (dit is poreus metaal met microscopisch kleine gaatjes erin, werkt als een zeer fijne zeef die ook bij hoge temperaturen stabiel blijft)</p>
+            <p>Haalt roet en grote deeltjes weg</p>
+            <p>Blijft heet door de hoge gastemperatuur (180&deg;C+), waardoor water niet kan condenseren</p>
+            <p>Stap 2: Verwarmde leiding</p>
+            <p>Sample-leiding verwarmen op 180&deg;C (dit gebeurt meestal met elektrische heating trace - verwarmingskabels die langs de leiding lopen.</p>
+            <p>Voorkomt condensatie van water (water blijft gas)</p>
+            <p>Stap 3: verwarmde pomp</p>
+            <p>Om een kleine overdruk te creëren wordt er een membraampomp toegepast</p>
+            <p>Stap 3: Koeler</p>
+            <p>Gecontroleerd afkoelen van 180&deg;C naar 4&deg;C</p>
+            <p>Langzaam genoeg (eventueel 2 traps) om evenwicht te behouden</p>
+            <p>Snel genoeg om chemische reacties te stoppen, in dit geval wil je de SO2 in de </p>
+            <p>Stap 4: Waterafscheider</p>
+            <p>Een klein vat waar het gas doorheen stroomt, waardoor waterdruppels naar beneden zakken (condensaat) en automatisch worden afgevoerd.</p>
+            <p>Alleen droog gas gaat door naar de analyzer</p>
+            <p>Stap 5: Fijn filter</p>
+            <p>5 &mu;m filter (micronfilter die hele kleine deeltjes tegenhoudt - 5 &mu;m is ongeveer 10x kleiner dan een haar)</p>
+            <p>Laatste bescherming voor de gevoelige analyzer-sensor</p>
+            <p>Stap 7: Flowmeter</p>
+            <p>Controleert of de flow constant is</p>
+            <p>Geeft alarm bij te weinig of te veel flow</p>
+            <p>Het resultaat:</p>
+            <ul>
+                <li>Schoon, droog gas</li>
+                <li>Juiste temperatuur en druk</li>
+                <li>Representatief voor het proces</li>
+                <li>Analyzer werkt jarenlang betrouwbaar</li>
+            </ul>
+
+        </section>
+        <section class="item3" style="margin-top: 50px;">
+            <div class="zadkine-navigation-button grow"><a style="display: block; white-space: normal;" href="/courses/75002/pages/ana-m3-h3-sample-conditioning.html_SAM"> &#128221; Samenvatting &amp; Reflectie 3.3 </a></div>
+            <div class="zadkine-navigation-button grow"><a style="display: block; white-space: normal;" href="/courses/75002/pages/ana-m3-h2-monstername.html"> &#128072; Terug naar hoofdstuk 3.2 </a></div>
+            <div class="zadkine-navigation-button grow"><a style="display: block; white-space: normal;" href="/courses/75002/pages/ana-m3-overzicht.html"> &#128072; Module 3 overzicht </a></div>
+        </section>
+        <section class="item4"><img src="media/tcr-logo.png" alt="TCR logo" style="max-width: 100px; display: block; margin: 20px 0;" /></section>
+    </div>
+</div>
+    </div>
+
+    <div class="feedback-bar">
+        <p>Feedback op deze pagina?</p>
+        <div class="feedback-buttons">
+            <a href="mailto:admin@teacher4technical.nl?subject=Feedback%20ANA%20M3%20-%20M3.3%20%E2%80%94%20Sample%20conditioning" class="btn-feedback">Feedback geven</a>
+            <a href="index.html" class="btn-view-feedback">Terug naar overzicht</a>
+        </div>
+    </div>
+</body>
+</html>
