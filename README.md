@@ -9,6 +9,11 @@ Preview omgeving voor TCR Canvas LMS theoriepagina's.
   - 1.2 Gas- en branddetectie
   - 1.3 ATEX-normen
 
+- **[Module 2: Basisbegrippen & natuurkundige principes](ana-m2/index.html)**
+  - 2.1 Inleiding analytische technieken
+  - 2.2 Basisbegrippen analytische chemie
+  - 2.3 Natuurkundige principes
+
 ---
 
 *Teacher4Technical — Techniek College Rotterdam*
