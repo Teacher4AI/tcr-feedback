@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANA Analyser Techniek — TCR Preview</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #f0f0f0;
+            padding: 30px 20px;
+            line-height: 1.6;
+        }
+        .page-wrapper {
+            max-width: 1100px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 16px;
+            padding: 40px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+        }
+        h1 {
+            color: #006445;
+            font-size: 32px;
+            margin-bottom: 6px;
+        }
+        .subtitle {
+            color: #777;
+            font-size: 16px;
+            margin-bottom: 30px;
+        }
+        .intro {
+            background: #f5f5f5;
+            border-radius: 10px;
+            padding: 20px 24px;
+            margin-bottom: 36px;
+        }
+        .intro p { color: #555; margin: 0; }
+
+        /* Module sections */
+        .module-section {
+            margin-bottom: 40px;
+        }
+        .module-header {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            margin-bottom: 8px;
+        }
+        .module-header h2 {
+            color: #006445;
+            font-size: 22px;
+            margin: 0;
+        }
+        .module-badge {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 600;
+            color: white;
+        }
+        .badge-m1 { background: #006445; }
+        .badge-m2 { background: #2196f3; }
+        .badge-m3 { background: #9c27b0; }
+        .module-desc {
+            color: #666;
+            font-size: 14px;
+            margin-bottom: 16px;
+        }
+        .btn-overzicht {
+            display: inline-block;
+            padding: 8px 18px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 600;
+            color: white !important;
+            margin-bottom: 16px;
+            transition: opacity 0.2s;
+        }
+        .btn-overzicht:hover { opacity: 0.85; }
+        .bg-m1 { background: #006445; }
+        .bg-m2 { background: #2196f3; }
+
+        /* Cards */
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 16px;
+        }
+        .chapter-card {
+            border: 2px solid #e0e0e0;
+            border-radius: 12px;
+            padding: 20px;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .chapter-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+        }
+        .chapter-card h3 {
+            color: #006445;
+            margin: 0 0 8px;
+            font-size: 17px;
+        }
+        .chapter-card p {
+            color: #555;
+            font-size: 13px;
+            margin-bottom: 14px;
+        }
+        .links {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+        .links a {
+            display: inline-block;
+            padding: 6px 14px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-size: 13px;
+            font-weight: 600;
+            color: white !important;
+            transition: opacity 0.2s;
+        }
+        .links a:hover { opacity: 0.85; }
+        .btn-theorie { background: #006445; }
+        .btn-samenvatting { background: #b0bd36; }
+
+        .divider {
+            border: none;
+            border-top: 2px solid #e8e8e8;
+            margin: 36px 0;
+        }
+        .footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #e0e0e0;
+            color: #999;
+            font-size: 13px;
+        }
+        .coming-soon {
+            background: #f9f9f9;
+            border: 2px dashed #ddd;
+            border-radius: 12px;
+            padding: 24px;
+            text-align: center;
+            color: #999;
+        }
+    </style>
+</head>
+<body>
+    <div class="page-wrapper">
+        <h1>ANA — Analyser Techniek</h1>
+        <p class="subtitle">Basis keuzemodule — Techniek College Rotterdam</p>
+
+        <div class="intro">
+            <p>Preview van de Canvas LMS theoriepagina's voor TCR — Techniek College Rotterdam.<br>
+            Gebruik de knoppen hieronder om door de theorie en samenvattingen te navigeren. Feedback geven kan via de feedbackbalk onderaan elke pagina.</p>
+        </div>
+
+        <!-- ===== MODULE 1 ===== -->
+        <div class="module-section">
+            <div class="module-header">
+                <h2>Module 1 — Veilig werken met analysersystemen</h2>
+                <span class="module-badge badge-m1">M1</span>
+            </div>
+            <p class="module-desc">Veiligheidsrisico's, LOTO-procedures, gas- en branddetectie, ATEX-normen en explosiebeveiliging.</p>
+            <a href="ana-m1/ana-m1-overzicht.html" class="btn-overzicht bg-m1">📖 Module 1 Overzicht</a>
+            <div class="card-grid">
+                <div class="chapter-card" style="border-color: #006445;">
+                    <h3>1.1 Veiligheidsmaatregelen</h3>
+                    <p>Risico's bij analysersystemen, LOTO-procedure, dubbel block &amp; bleed, gascilinderveiligheid, purgesystemen en PBM's.</p>
+                    <div class="links">
+                        <a href="ana-m1/ana-m1-h1-veiligheidsmaatregelen.html" class="btn-theorie">Theorie</a>
+                        <a href="ana-m1/ana-m1-h1-samenvatting.html" class="btn-samenvatting">Samenvatting</a>
+                    </div>
+                </div>
+                <div class="chapter-card" style="border-color: #006445;">
+                    <h3>1.2 Gas- en branddetectie</h3>
+                    <p>Sensortypes, detectiemethoden, monitoringsystemen, branddetectie, zuurstofdetectors en stap-voor-stap procedures.</p>
+                    <div class="links">
+                        <a href="ana-m1/ana-m1-h2-gas-branddetectie.html" class="btn-theorie">Theorie</a>
+                        <a href="ana-m1/ana-m1-h2-samenvatting.html" class="btn-samenvatting">Samenvatting</a>
+                    </div>
+                </div>
+                <div class="chapter-card" style="border-color: #006445;">
+                    <h3>1.3 ATEX-normen</h3>
+                    <p>ATEX-zones, gasgroepen &amp; temperatuurklassen, ATEX-markering en praktijktoepassing.</p>
+                    <div class="links">
+                        <a href="ana-m1/ana-m1-h3-atex-normen.html" class="btn-theorie">Theorie</a>
+                        <a href="ana-m1/ana-m1-h3-samenvatting.html" class="btn-samenvatting">Samenvatting</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr class="divider">
+
+        <!-- ===== MODULE 2 ===== -->
+        <div class="module-section">
+            <div class="module-header">
+                <h2>Module 2 — Basisbegrippen &amp; natuurkundige principes</h2>
+                <span class="module-badge badge-m2">M2</span>
+            </div>
+            <p class="module-desc">Analytische technieken, basisbegrippen chemie, sampling, kalibratie, aggregatietoestanden en dampspanning.</p>
+            <a href="ana-m2/ana-m2-overzicht.html" class="btn-overzicht bg-m2">📖 Module 2 Overzicht</a>
+            <div class="card-grid">
+                <div class="chapter-card" style="border-color: #2196f3;">
+                    <h3>2.1 Inleiding analytische technieken</h3>
+                    <p>Wat zijn analytische technieken, verschil met instrumentatie, chromatografie, spectrometrie en industrietoepassingen.</p>
+                    <div class="links">
+                        <a href="ana-m2/ana-m2-h1-inleiding-analytische-technieken.html" class="btn-theorie">Theorie</a>
+                        <a href="ana-m2/ana-m2-h1-samenvatting.html" class="btn-samenvatting">Samenvatting</a>
+                    </div>
+                </div>
+                <div class="chapter-card" style="border-color: #2196f3;">
+                    <h3>2.2 Basisbegrippen analytische chemie</h3>
+                    <p>Sampling en samplematrix, kalibratie vs. validatie, standaarden, grootheden en eenheden (ppm, mol/L).</p>
+                    <div class="links">
+                        <a href="ana-m2/ana-m2-h2-basisbegrippen-analytische-chemie.html" class="btn-theorie">Theorie</a>
+                        <a href="ana-m2/ana-m2-h2-samenvatting.html" class="btn-samenvatting">Samenvatting</a>
+                    </div>
+                </div>
+                <div class="chapter-card" style="border-color: #2196f3;">
+                    <h3>2.3 Natuurkundige principes</h3>
+                    <p>Aggregatietoestanden, faseovergangen, verdamping en condensatie, dampspanning en toepassingen in analyzersystemen.</p>
+                    <div class="links">
+                        <a href="ana-m2/ana-m2-h3-natuurkundige-principes.html" class="btn-theorie">Theorie</a>
+                        <a href="ana-m2/ana-m2-h3-samenvatting.html" class="btn-samenvatting">Samenvatting</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr class="divider">
+
+        <!-- ===== MODULE 3 (placeholder) ===== -->
+        <div class="module-section">
+            <div class="module-header">
+                <h2>Module 3 — Technische documentatie &amp; monstername</h2>
+                <span class="module-badge badge-m3">M3</span>
+            </div>
+            <div class="coming-soon">
+                <p>Module 3 wordt binnenkort toegevoegd.</p>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>Teacher4Technical — TCR Analyser Techniek | Preview omgeving</p>
+        </div>
+    </div>
+</body>
+</html>
