@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ANA 3.3 Sample conditioning — TCR Preview</title>
-    <link rel="stylesheet" href="style.css?v=1777913539245">
+    <link rel="stylesheet" href="style.css?v=1777969620159">
 </head>
 <body>
     <div class="page-wrapper">
@@ -12,550 +12,525 @@
             📋 Preview — ANA Analyser Techniek | <a href="../index.html">&larr; Terug naar overzicht</a>
         </div>
 <div style="max-width: 1140px;">
-    <div class="zadkine-template-container tcr-template-container" style="margin: 0;">
-        <section class="item1" style="margin: 0;">
-            <div class="zadkine-banner"><img src="media/banner-ana-m3.png" alt="Banner ANA Module 3" />
-                <h2>ANA &ndash; Module 3</h2>
-            </div>
-
-            <h3 style="margin-top: 30px;">3.1 Leerdoelen</h3>
-            <p>Na het volgen van dit hoofdstuk kun je:</p>
-            <ul>
-                <li>Uitleggen waarom monstervoorbereiding (sample conditionering) nodig is voor betrouwbare metingen</li>
-                <li>Verschillende technieken van monstervoorbereiding benoemen en aangeven wanneer je ze gebruikt</li>
-                <li>Begrijpen waarom het monster representatief moet blijven (de te meten eigenschappen niet mogen veranderen)</li>
-                <li>De belangrijkste technieken toepassen: filtratie, temperatuurregeling en drukregeling</li>
-            </ul>
-
-            <h3 style="margin-top: 30px;">3.2 Van bloedafname naar lab-resultaat: Waarom voorbereiding?</h3>
-            <p>Van proces naar analyzer: Het moet schoon en op de juiste conditie</p>
-            <p>Stel je voor: je gaat naar de huisarts voor een bloedtest. De verpleegkundige neemt een buisje bloed af. Maar wat gebeurt er daarna?</p>
-            <p>De directe methode: Het buisje bloed meteen in het meetapparaat stoppen - maar bloedcellen, stolsels en de verkeerde temperatuur maken dat de meting niet klopt.</p>
-            <p>De professionele methode: Het bloed wordt eerst behandeld - centrifugeren om cellen te scheiden, op de juiste temperatuur brengen, soms een stof toevoegen tegen stolling. Pas dan kan het lab de werkelijke waarden meten.</p>
-            <p>Dit voorbeeld laat zien waarom monstervoorbereiding (sample conditioning) zo belangrijk is in de procesindustrie. Net als bij bloedonderzoek moet een monster uit het proces worden "klaargemaakt" voordat de analyzer betrouwbaar kan meten.</p>
-            <p>De uitdaging: Van procesomstandigheden naar analyzer-eisen</p>
-            <h4>Een voorbeeld: zuurstofanalyzer</h4>
-            <p>Een zuurstofanalyzer heeft specifieke eisen, terwijl het proces er heel anders uitziet:</p>
-            <p><strong>De analyzer heeft nodig:</strong></p>
-            <ul>
-                <li>Schoon monster (geen vuil).</li>
-                <li>2 bar druk.</li>
-                <li>45&deg;C temperatuur.</li>
-                <li>Geen gasbellen.</li>
-            </ul>
-            <p><strong>Maar het proces levert:</strong></p>
-            <ul>
-                <li>300&deg;C hete stoom.</li>
-                <li>15 bar druk.</li>
-                <li>Met stofdeeltjes en oliedruppels.</li>
-            </ul>
-            <p><strong>Zonder voorbereiding:</strong> de analyzer is binnen een paar uur kapot door oververhitting en vervuiling. <strong>Met goede voorbereiding:</strong> jarenlang betrouwbare metingen. Als technicus ben jij verantwoordelijk voor deze monstervoorbereiding &mdash; dat is de brug tussen het proces en de analyzer.</p>
-            <h4>Waarom is monstervoorbereiding zo belangrijk?</h4>
-            <ul>
-                <li><strong>Bescherming:</strong> voorkomt schade aan gevoelige onderdelen van de analyzer.</li>
-                <li><strong>Nauwkeurigheid:</strong> verwijdert storingen die verkeerde metingen veroorzaken.</li>
-                <li><strong>Representatief blijven:</strong> het monster moet dezelfde eigenschappen houden als in het proces.</li>
-                <li><strong>Betrouwbaarheid:</strong> zorgt voor constante meetomstandigheden.</li>
-            </ul>
-
-            <h3 style="margin-top: 30px;">3.3 De gouden regel: Representatief blijven</h3>
-            <p>Het belangrijkste principe van monstervoorbereiding</p>
-
+<div class="zadkine-template-container tcr-template-container" style="margin: 0;">
+<section class="item1" style="margin: 0;">
+<div class="zadkine-banner"><img alt="Banner ANA Module 3" src="media/banner-ana-m3.png"/>
+<h2>ANA – Module 3</h2>
+</div>
+<h3 style="margin-top: 30px;">3.1 Leerdoelen</h3>
+<p>Na het volgen van dit hoofdstuk kun je:</p>
+<ul>
+<li>Uitleggen waarom monstervoorbereiding (sample conditionering) nodig is voor betrouwbare metingen</li>
+<li>Verschillende technieken van monstervoorbereiding benoemen en aangeven wanneer je ze gebruikt</li>
+<li>Begrijpen waarom het monster representatief moet blijven (de te meten eigenschappen niet mogen veranderen)</li>
+<li>De belangrijkste technieken toepassen: filtratie, temperatuurregeling en drukregeling</li>
+</ul>
+<h3 style="margin-top: 30px;">3.2 Van bloedafname naar lab-resultaat: Waarom voorbereiding?</h3>
+<p>Van proces naar analyzer: Het moet schoon en op de juiste conditie</p>
+<p>Stel je voor: je gaat naar de huisarts voor een bloedtest. De verpleegkundige neemt een buisje bloed af. Maar wat gebeurt er daarna?</p>
+<p>De directe methode: Het buisje bloed meteen in het meetapparaat stoppen - maar bloedcellen, stolsels en de verkeerde temperatuur maken dat de meting niet klopt.</p>
+<p>De professionele methode: Het bloed wordt eerst behandeld - centrifugeren om cellen te scheiden, op de juiste temperatuur brengen, soms een stof toevoegen tegen stolling. Pas dan kan het lab de werkelijke waarden meten.</p>
+<p>Dit voorbeeld laat zien waarom monstervoorbereiding (<a href="../afkortingen.html#abbr-sample-conditioning-jump" style="text-decoration: none;"><abbr title="Het hele systeem dat het monster vóór de analyzer op de juiste temperatuur, druk en zuiverheid brengt. Filters, koelers, drukregelaars, drogers." style="color: #006445; font-weight: 600; text-decoration: underline dotted #006445; text-underline-offset: 3px; cursor: help;">sample conditioning</abbr></a>) zo belangrijk is in de procesindustrie. Net als bij bloedonderzoek moet een monster uit het proces worden "klaargemaakt" voordat de analyzer betrouwbaar kan meten.</p>
+<p>De uitdaging: Van procesomstandigheden naar analyzer-eisen</p>
+<h4>Een voorbeeld: zuurstofanalyzer</h4>
+<p>Een zuurstofanalyzer heeft specifieke eisen, terwijl het proces er heel anders uitziet:</p>
+<p><strong>De analyzer heeft nodig:</strong></p>
+<ul>
+<li>Schoon monster (geen vuil).</li>
+<li>2 bar druk.</li>
+<li>45<a href="../afkortingen.html#abbr-C-jump" style="text-decoration: none;"><abbr title="graden Celsius — Standaard temperatuureenheid. 0 °C = vriespunt water, 100 °C = kookpunt water bij standaarddruk." style="color: #006445; font-weight: 600; text-decoration: underline dotted #006445; text-underline-offset: 3px; cursor: help;">°C</abbr></a> temperatuur.</li>
+<li>Geen gasbellen.</li>
+</ul>
+<p><strong>Maar het proces levert:</strong></p>
+<ul>
+<li>300°C hete stoom.</li>
+<li>15 bar druk.</li>
+<li>Met stofdeeltjes en oliedruppels.</li>
+</ul>
+<p><strong>Zonder voorbereiding:</strong> de analyzer is binnen een paar uur kapot door oververhitting en vervuiling. <strong>Met goede voorbereiding:</strong> jarenlang betrouwbare metingen. Als technicus ben jij verantwoordelijk voor deze monstervoorbereiding — dat is de brug tussen het proces en de analyzer.</p>
+<h4>Waarom is monstervoorbereiding zo belangrijk?</h4>
+<ul>
+<li><strong>Bescherming:</strong> voorkomt schade aan gevoelige onderdelen van de analyzer.</li>
+<li><strong><a href="../afkortingen.html#abbr-nauwkeurigheid-jump" style="text-decoration: none;"><abbr title="Hoe dicht een meting bij de werkelijke waarde ligt. Niet hetzelfde als precisie!" style="color: #006445; font-weight: 600; text-decoration: underline dotted #006445; text-underline-offset: 3px; cursor: help;">Nauwkeurigheid</abbr></a>:</strong> verwijdert storingen die verkeerde metingen veroorzaken.</li>
+<li><strong>Representatief blijven:</strong> het monster moet dezelfde eigenschappen houden als in het proces.</li>
+<li><strong>Betrouwbaarheid:</strong> zorgt voor constante meetomstandigheden.</li>
+</ul>
+<h3 style="margin-top: 30px;">3.3 De gouden regel: Representatief blijven</h3>
+<p>Het belangrijkste principe van monstervoorbereiding</p>
 <div style="text-align: left; margin: 20px 0;">
-    <img src="media/ana-m3-h3-infographic1-gouden-regel-representatief.png" alt="De gouden regel: representatief blijven" style="max-width: 620px; width: 100%; height: auto; border-radius: 4px;" loading="lazy" />
-    <p style="font-size: 0.85rem; color: #666; margin-top: 6px;"><em>De gouden regel van monstervoorbereiding: verander alleen wat nodig is</em></p>
+<img alt="De gouden regel: representatief blijven" loading="lazy" src="media/ana-m3-h3-infographic1-gouden-regel-representatief.png" style="max-width: 620px; width: 100%; height: auto; border-radius: 4px;"/>
+<p style="font-size: 0.85rem; color: #666; margin-top: 6px;"><em>De gouden regel van monstervoorbereiding: verander alleen wat nodig is</em></p>
 </div>
-
-            <p>De gouden regel is: "Verander alleen wat nodig is voor de analyzer, behoud alles wat belangrijk is voor de meting."</p>
-            <p>Dit betekent dat je een balans moet vinden tussen:</p>
-            <ul>
-                <li>De analyzer beschermen.</li>
-                <li>Het monster niet veranderen.</li>
-            </ul>
-            <h4>Voorbeeld: pH-meting in een reactor</h4>
-            <p><strong>Het proces:</strong></p>
-            <ul>
-                <li>Temperatuur: 180&deg;C (veel te heet voor de pH-sensor).</li>
-                <li>Druk: 80 bar (te hoog voor het systeem).</li>
-                <li>Monster: waterige oplossing met opgeloste stoffen.</li>
-            </ul>
-            <p><strong>Wat moet je doen?</strong></p>
-            <ul>
-                <li><strong>Moet veranderen:</strong> temperatuur en druk (anders gaat de analyzer kapot).</li>
-                <li><strong>Mag niet veranderen:</strong> de pH-waarde.</li>
-                <li><strong>Het gevaar:</strong> als je te snel afkoelt, kunnen stoffen neerslaan en dan klopt de pH-meting niet meer.</li>
-            </ul>
-            <p><strong>De oplossing:</strong></p>
-            <ul>
-                <li>Langzaam afkoelen naar 50&deg;C (zodat alles in balans blijft).</li>
-                <li>Druk verlagen naar &lt;10 bar (zonder schokken).</li>
-                <li>Het monster snel naar de analyzer brengen (korte verblijftijd zodat het representatief is).</li>
-                <li>Monster terugleiden naar het proces.</li>
-            </ul>
-            <h4>Tijd is belangrijk!</h4>
-            <p>Hoe langer het monster onderweg is naar de analyzer, hoe groter de kans dat er iets verandert. Bovendien is het belangrijk de tijd tussen sample name en de uiteindelijke meting zo kort mogelijk is:</p>
-            <ul>
-                <li>Condensatie kan optreden.</li>
-                <li>Stoffen kunnen neerslaan.</li>
-                <li>Stoffen kunnen aan de leidingwand blijven plakken.</li>
-            </ul>
+<p>De gouden regel is: "Verander alleen wat nodig is voor de analyzer, behoud alles wat belangrijk is voor de meting."</p>
+<p>Dit betekent dat je een balans moet vinden tussen:</p>
+<ul>
+<li>De analyzer beschermen.</li>
+<li>Het monster niet veranderen.</li>
+</ul>
+<h4>Voorbeeld: pH-meting in een reactor</h4>
+<p><strong>Het proces:</strong></p>
+<ul>
+<li>Temperatuur: 180°C (veel te heet voor de <a href="../afkortingen.html#abbr-pH-jump" style="text-decoration: none;"><abbr title="zuurgraad — Schaal van 0 tot 14 die aangeeft hoe zuur of basisch een vloeistof is. pH 7 = neutraal, lager = zuur, hoger = basisch." style="color: #006445; font-weight: 600; text-decoration: underline dotted #006445; text-underline-offset: 3px; cursor: help;">pH</abbr></a>-sensor).</li>
+<li>Druk: 80 bar (te hoog voor het systeem).</li>
+<li>Monster: waterige oplossing met opgeloste stoffen.</li>
+</ul>
+<p><strong>Wat moet je doen?</strong></p>
+<ul>
+<li><strong>Moet veranderen:</strong> temperatuur en druk (anders gaat de analyzer kapot).</li>
+<li><strong>Mag niet veranderen:</strong> de pH-waarde.</li>
+<li><strong>Het gevaar:</strong> als je te snel afkoelt, kunnen stoffen neerslaan en dan klopt de pH-meting niet meer.</li>
+</ul>
+<p><strong>De oplossing:</strong></p>
+<ul>
+<li>Langzaam afkoelen naar 50°C (zodat alles in balans blijft).</li>
+<li>Druk verlagen naar &lt;10 bar (zonder schokken).</li>
+<li>Het monster snel naar de analyzer brengen (korte verblijftijd zodat het representatief is).</li>
+<li>Monster terugleiden naar het proces.</li>
+</ul>
+<h4>Tijd is belangrijk!</h4>
+<p>Hoe langer het monster onderweg is naar de analyzer, hoe groter de kans dat er iets verandert. Bovendien is het belangrijk de tijd tussen sample name en de uiteindelijke meting zo kort mogelijk is:</p>
+<ul>
+<li>Condensatie kan optreden.</li>
+<li>Stoffen kunnen neerslaan.</li>
+<li>Stoffen kunnen aan de leidingwand blijven plakken.</li>
+</ul>
 <div style="margin: 16px 0;">
-    <p style="background: #e8f5e9; padding: 12px; border-left: 4px solid #4caf50; margin: 0;"><strong>&#128214; Praktijkvoorbeeld: ammoniakgas meten</strong></p>
-    <div style="background: #f5f5f5; padding: 16px; border-left: 4px solid #bdbdbd;">
-        <p style="margin: 0;"><strong>Het proces:</strong> 200&deg;C hete afgasstroom met 500 ppm NH&#8323; (ammoniak).</p>
-        <p style="margin: 8px 0 0;"><strong>Probleem zonder goede voorbereiding:</strong></p>
-        <ul style="margin: 4px 0 8px 0; padding-left: 24px;">
-            <li>Lange, koude leiding naar de analyzer.</li>
-            <li>Ammoniak blijft plakken aan de koude leidingwanden.</li>
-            <li>De analyzer meet maar 200 ppm (terwijl er 500 ppm in zit).</li>
-        </ul>
-        <p style="margin: 8px 0 0;"><strong>Oplossing met goede voorbereiding:</strong></p>
-        <ul style="margin: 4px 0 8px 0; padding-left: 24px;">
-            <li>Verwarmde leiding op 180&deg;C (voorkomt condensatie en plakken).</li>
-            <li>Verblijftijd in de leiding minimaliseren (bij voorkeur minder dan 1 minuut transport).</li>
-            <li>Speciale coating in de leiding (voorkomt plakken).</li>
-        </ul>
-        <p style="margin: 8px 0 0;"><strong>Resultaat:</strong> de analyzer meet correct 500 ppm.</p>
-    </div>
+<p style="background: #e8f5e9; padding: 12px; border-left: 4px solid #4caf50; margin: 0;"><strong>📖 Praktijkvoorbeeld: ammoniakgas meten</strong></p>
+<div style="background: #f5f5f5; padding: 16px; border-left: 4px solid #bdbdbd;">
+<p style="margin: 0;"><strong>Het proces:</strong> 200°C hete afgasstroom met 500 <a href="../afkortingen.html#abbr-ppm-jump" style="text-decoration: none;"><abbr title="parts per million — Concentratie-eenheid: aantal delen per miljoen. 1 ppm = 1 mg per kg, of 0,0001%. Gebruikt voor lage concentraties giftige stoffen." style="color: #006445; font-weight: 600; text-decoration: underline dotted #006445; text-underline-offset: 3px; cursor: help;">ppm</abbr></a> NH₃ (ammoniak).</p>
+<p style="margin: 8px 0 0;"><strong>Probleem zonder goede voorbereiding:</strong></p>
+<ul style="margin: 4px 0 8px 0; padding-left: 24px;">
+<li>Lange, koude leiding naar de analyzer.</li>
+<li>Ammoniak blijft plakken aan de koude leidingwanden.</li>
+<li>De analyzer meet maar 200 ppm (terwijl er 500 ppm in zit).</li>
+</ul>
+<p style="margin: 8px 0 0;"><strong>Oplossing met goede voorbereiding:</strong></p>
+<ul style="margin: 4px 0 8px 0; padding-left: 24px;">
+<li>Verwarmde leiding op 180°C (voorkomt condensatie en plakken).</li>
+<li>Verblijftijd in de leiding minimaliseren (bij voorkeur minder dan 1 minuut transport).</li>
+<li>Speciale coating in de leiding (voorkomt plakken).</li>
+</ul>
+<p style="margin: 8px 0 0;"><strong>Resultaat:</strong> de analyzer meet correct 500 ppm.</p>
 </div>
-
+</div>
 <div style="max-width: 780px; margin: 20px 0;">
-    <div style="border: 2px solid #b0bd36; border-radius: 10px; padding: 12px; margin: 14px 0;">
-        <p style="margin: 0 0 8px;"><strong>De gouden regel zegt: "verander alleen wat nodig is voor de analyzer". Wat moet bij een pH-meting in een hete reactor zeker NIET veranderen?</strong></p>
-        <details style="border: 1px solid #e6e6e6; border-radius: 8px; padding: 8px; margin: 8px 0;">
-            <summary style="list-style: none; cursor: pointer; background: #006445; color: #fff; padding: 8px 10px; border-radius: 6px; display: block;">A) De temperatuur van het monster</summary>
-            <div style="margin-top: 8px;">&#10060; Temperatuur w&eacute;l aanpassen mag, want de pH-sensor kan geen 180&deg;C aan; dat is geen schending van de gouden regel.</div>
-        </details>
-        <details style="border: 1px solid #e6e6e6; border-radius: 8px; padding: 8px; margin: 8px 0;">
-            <summary style="list-style: none; cursor: pointer; background: #006445; color: #fff; padding: 8px 10px; border-radius: 6px; display: block;">B) De druk van het monster</summary>
-            <div style="margin-top: 8px;">&#10060; Druk verlagen mag, zolang dit niet de pH-waarde be&iuml;nvloedt; bescherming van de analyzer is toegestaan.</div>
-        </details>
-        <details style="border: 1px solid #e6e6e6; border-radius: 8px; padding: 8px; margin: 8px 0;">
-            <summary style="list-style: none; cursor: pointer; background: #006445; color: #fff; padding: 8px 10px; border-radius: 6px; display: block;">C) De pH-waarde zelf</summary>
-            <div style="margin-top: 8px;">&#9989; Correct! De grootheid die je meet, moet representatief blijven; te snel afkoelen kan stoffen laten neerslaan en de pH veranderen.</div>
-        </details>
-        <details style="border: 1px solid #e6e6e6; border-radius: 8px; padding: 8px; margin: 8px 0;">
-            <summary style="list-style: none; cursor: pointer; background: #006445; color: #fff; padding: 8px 10px; border-radius: 6px; display: block;">D) De flow door de analyzer</summary>
-            <div style="margin-top: 8px;">&#10060; Flow-instelling is een gewone systeemparameter; de gouden regel gaat over wat het monster representatief houdt.</div>
-        </details>
-    </div>
-</div>
-
-            <h3 style="margin-top: 30px;">3.4 Filtratie en scheiding: Vuil eruit!</h3>
-            <p>Waarom filteren? Een dagelijkse uitdaging in de plant</p>
-            <p>Stel je voor: je werkt in een raffinaderij en je analyzer moet continu de samenstelling van een gasstroom meten. Maar die gasstroom komt rechtstreeks uit het proces - en daar zit van alles in wat er eigenlijk niet in hoort. De productstroom zal ook vuil bevatten, Roestdeeltjes van oude leidingen, stofjes uit de lucht, katalysator-deeltjes van de reactor, condensaatdruppels. Als al dat vuil rechtstreeks je analyzer ingaat, dan duurt het niet lang voordat je problemen krijgt.</p>
-            <p>Filtratie betekent simpelweg: al dat vuil eruit halen voordat het schade kan aanrichten. Denk aan het verschil tussen kraanwater drinken in Nederland (gefilterd, schoon) en water drinken uit een sloot (ongefilterd, vol troep). Het principe is hetzelfde: je wilt alleen het zuivere deel hebben.</p>
-            <p>Maar waarom is dit zo belangrijk? Vaste deeltjes in je monster zijn echt een probleem. Ze kunnen reduceers, naaldventielen, flowmeters, leidingen, en kleppen verstoppen, waardoor er geen flow meer is en daardoor die niet meer goed werken. Ze kunnen je sensor bedekken met een laagje troep, waardoor die niet meer goed meet. En ze kunnen de meting zelf verstoren - bijvoorbeeld door licht te blokkeren in een optische analyzer.</p>
-            <p>Zwevende deeltjes - denk aan stof, roest of zand - zijn vooral gevaarlijk voor gevoelige analyzers. Een sensor die bedekt raakt met een laagje vuil, zal een afwijkende meetwaarde kunnen geven. Optische vensters (waar licht doorheen moet) kunnen bekrast raken, waardoor de analyzer onbruikbaar wordt. En soms zorgen die deeltjes voor valse alarmen, omdat de analyzer denkt dat er iets mis is terwijl het gewoon vuil is.</p>
-
-<div style="text-align: left; margin: 20px 0;">
-    <img src="media/ana-m3-h3-foto9-sample-filter-swagelok.jpg" alt="Sample filter Swagelok" style="max-width: 350px; width: 100%; height: auto; border-radius: 4px;" loading="lazy" />
-    <p style="font-size: 0.85rem; color: #666; margin-top: 6px;"><em>Sample filter (Swagelok) &ndash; beschermt de analyzer tegen vaste deeltjes uit het proces</em></p>
-</div>
-
-            <details style="border: 2px solid #b0bd36; border-radius: 12px; padding: 10px 12px; margin: 14px 0; max-width: 780px;">
-    <summary style="cursor: pointer; color: #006445;"><strong>&#129514; Verschillende filter-types in detail (grof &rarr; fijn &rarr; zeer fijn)</strong></summary>
-    <div style="margin-top: 8px; color: #333;">
-<p>Verschillende soorten filters - van grof naar fijn</p>
-            <p>Net zoals je bij koffiezetten verschillende filters hebt (grove zeef voor grote stukken, fijn filter voor de koffie), gebruik je in de plant ook verschillende soorten filters. Elk type heeft zijn eigen taak.</p>
-            <p>De grove filtering (alles groter dan 100 - 500 &mu;m (0,1 tot 0,5 mm), is je eerste verdedigingslinie. Dit zijn vaak simpele zeeffilters of mandfilters - denk aan een vergiet in de keuken, maar dan voor industriële toepassingen. Deze filters halen de grote brokken eruit: stukjes roest, grote stofdeeltjes, brokjes uit de leiding. Ze beschermen vooral pompen en andere grove apparatuur. Bijvoorbeeld: bij het verpompen van afvalwater kunnen er zandkorrels in het systeem komen. Die wil je eruit hebben voordat ze je pomp kapot maken.</p>
-            <p>Dan heb je de fijne filtering (tussen 10 en 100 &mu;m). Dit zijn vaak patroonfilters - cilindervormige filters die je kunt verwisselen - of gesinterde metaalfilters (metaal met hele kleine gaatjes). Deze filters beschermen precisie-onderdelen zoals flow-regelaars. Die regelaars hebben hele nauwkeurige klepjes die al kapot kunnen gaan van kleine deeltjes. Deze filters zitten vaak vlak voor dat soort gevoelige apparatuur.</p>
-            <p>De zeer fijne filtering (kleiner dan 10 &mu;m, zo klein dat je het niet meer kunt zien) is voor de meest kwetsbare analyzers. Dit zijn vaak membraanfilters - dunne schijfjes met microscopisch kleine gaatjes. Deze gebruik je bijvoorbeeld bij gaschromatografie, waar zelfs hele kleine deeltjes schade kunnen veroorzaken aan (injectie) kleppen, of verstoppen van capillaire leidingen.</p>
-    </div>
+<div style="border: 2px solid #b0bd36; border-radius: 10px; padding: 12px; margin: 14px 0;">
+<p style="margin: 0 0 8px;"><strong>De gouden regel zegt: "verander alleen wat nodig is voor de analyzer". Wat moet bij een pH-meting in een hete reactor zeker NIET veranderen?</strong></p>
+<details style="border: 1px solid #e6e6e6; border-radius: 8px; padding: 8px; margin: 8px 0;">
+<summary style="list-style: none; cursor: pointer; background: #006445; color: #fff; padding: 8px 10px; border-radius: 6px; display: block;">A) De temperatuur van het monster</summary>
+<div style="margin-top: 8px;">❌ Temperatuur wél aanpassen mag, want de pH-sensor kan geen 180°C aan; dat is geen schending van de gouden regel.</div>
 </details>
-
+<details style="border: 1px solid #e6e6e6; border-radius: 8px; padding: 8px; margin: 8px 0;">
+<summary style="list-style: none; cursor: pointer; background: #006445; color: #fff; padding: 8px 10px; border-radius: 6px; display: block;">B) De druk van het monster</summary>
+<div style="margin-top: 8px;">❌ Druk verlagen mag, zolang dit niet de pH-waarde beïnvloedt; bescherming van de analyzer is toegestaan.</div>
+</details>
+<details style="border: 1px solid #e6e6e6; border-radius: 8px; padding: 8px; margin: 8px 0;">
+<summary style="list-style: none; cursor: pointer; background: #006445; color: #fff; padding: 8px 10px; border-radius: 6px; display: block;">C) De pH-waarde zelf</summary>
+<div style="margin-top: 8px;">✅ Correct! De grootheid die je meet, moet representatief blijven; te snel afkoelen kan stoffen laten neerslaan en de pH veranderen.</div>
+</details>
+<details style="border: 1px solid #e6e6e6; border-radius: 8px; padding: 8px; margin: 8px 0;">
+<summary style="list-style: none; cursor: pointer; background: #006445; color: #fff; padding: 8px 10px; border-radius: 6px; display: block;">D) De flow door de analyzer</summary>
+<div style="margin-top: 8px;">❌ Flow-instelling is een gewone systeemparameter; de gouden regel gaat over wat het monster representatief houdt.</div>
+</details>
+</div>
+</div>
+<h3 style="margin-top: 30px;">3.4 Filtratie en scheiding: Vuil eruit!</h3>
+<p>Waarom filteren? Een dagelijkse uitdaging in de plant</p>
+<p>Stel je voor: je werkt in een raffinaderij en je analyzer moet continu de samenstelling van een gasstroom meten. Maar die gasstroom komt rechtstreeks uit het proces - en daar zit van alles in wat er eigenlijk niet in hoort. De productstroom zal ook vuil bevatten, Roestdeeltjes van oude leidingen, stofjes uit de lucht, katalysator-deeltjes van de reactor, condensaatdruppels. Als al dat vuil rechtstreeks je analyzer ingaat, dan duurt het niet lang voordat je problemen krijgt.</p>
+<p>Filtratie betekent simpelweg: al dat vuil eruit halen voordat het schade kan aanrichten. Denk aan het verschil tussen kraanwater drinken in Nederland (gefilterd, schoon) en water drinken uit een sloot (ongefilterd, vol troep). Het principe is hetzelfde: je wilt alleen het zuivere deel hebben.</p>
+<p>Maar waarom is dit zo belangrijk? Vaste deeltjes in je monster zijn echt een probleem. Ze kunnen reduceers, naaldventielen, flowmeters, leidingen, en kleppen verstoppen, waardoor er geen flow meer is en daardoor die niet meer goed werken. Ze kunnen je sensor bedekken met een laagje troep, waardoor die niet meer goed meet. En ze kunnen de meting zelf verstoren - bijvoorbeeld door licht te blokkeren in een optische analyzer.</p>
+<p>Zwevende deeltjes - denk aan stof, roest of zand - zijn vooral gevaarlijk voor gevoelige analyzers. Een sensor die bedekt raakt met een laagje vuil, zal een afwijkende meetwaarde kunnen geven. Optische vensters (waar licht doorheen moet) kunnen bekrast raken, waardoor de analyzer onbruikbaar wordt. En soms zorgen die deeltjes voor valse alarmen, omdat de analyzer denkt dat er iets mis is terwijl het gewoon vuil is.</p>
+<div style="text-align: left; margin: 20px 0;">
+<img alt="Sample filter Swagelok" loading="lazy" src="media/ana-m3-h3-foto9-sample-filter-swagelok.jpg" style="max-width: 350px; width: 100%; height: auto; border-radius: 4px;"/>
+<p style="font-size: 0.85rem; color: #666; margin-top: 6px;"><em>Sample filter (Swagelok) – beschermt de analyzer tegen vaste deeltjes uit het proces</em></p>
+</div>
+<details style="border: 2px solid #b0bd36; border-radius: 12px; padding: 10px 12px; margin: 14px 0; max-width: 780px;">
+<summary style="cursor: pointer; color: #006445;"><strong>🧪 Verschillende filter-types in detail (grof → fijn → zeer fijn)</strong></summary>
+<div style="margin-top: 8px; color: #333;">
+<p>Verschillende soorten filters - van grof naar fijn</p>
+<p>Net zoals je bij koffiezetten verschillende filters hebt (grove zeef voor grote stukken, fijn filter voor de koffie), gebruik je in de plant ook verschillende soorten filters. Elk type heeft zijn eigen taak.</p>
+<p>De grove filtering (alles groter dan 100 - 500 μm (0,1 tot 0,5 mm), is je eerste verdedigingslinie. Dit zijn vaak simpele zeeffilters of mandfilters - denk aan een vergiet in de keuken, maar dan voor industriële toepassingen. Deze filters halen de grote brokken eruit: stukjes roest, grote stofdeeltjes, brokjes uit de leiding. Ze beschermen vooral pompen en andere grove apparatuur. Bijvoorbeeld: bij het verpompen van afvalwater kunnen er zandkorrels in het systeem komen. Die wil je eruit hebben voordat ze je pomp kapot maken.</p>
+<p>Dan heb je de fijne filtering (tussen 10 en 100 μm). Dit zijn vaak patroonfilters - cilindervormige filters die je kunt verwisselen - of gesinterde metaalfilters (metaal met hele kleine gaatjes). Deze filters beschermen <a href="../afkortingen.html#abbr-precisie-jump" style="text-decoration: none;"><abbr title="Hoe dicht herhaalde metingen bij elkaar liggen, ongeacht of ze ook bij de werkelijke waarde zitten. Niet hetzelfde als nauwkeurigheid!" style="color: #006445; font-weight: 600; text-decoration: underline dotted #006445; text-underline-offset: 3px; cursor: help;">precisie</abbr></a>-onderdelen zoals flow-regelaars. Die regelaars hebben hele nauwkeurige klepjes die al kapot kunnen gaan van kleine deeltjes. Deze filters zitten vaak vlak voor dat soort gevoelige apparatuur.</p>
+<p>De zeer fijne filtering (kleiner dan 10 μm, zo klein dat je het niet meer kunt zien) is voor de meest kwetsbare analyzers. Dit zijn vaak membraanfilters - dunne schijfjes met microscopisch kleine gaatjes. Deze gebruik je bijvoorbeeld bij gaschromatografie, waar zelfs hele kleine deeltjes schade kunnen veroorzaken aan (injectie) kleppen, of verstoppen van capillaire leidingen.</p>
+</div>
+</details>
 <div style="margin: 16px 0;">
-    <p style="background: #e8f5e9; padding: 12px; border-left: 4px solid #4caf50; margin: 0;"><strong>&#128214; Praktijkvoorbeeld: zuurstofmeting in afvalwater</strong></p>
-    <div style="background: #f5f5f5; padding: 16px; border-left: 4px solid #bdbdbd;">
-        <p style="margin: 0;"><strong>De situatie:</strong></p>
-        <ul style="margin: 4px 0 8px 0; padding-left: 24px;">
-            <li>Je wilt zuurstof meten in afvalwater.</li>
-            <li>De vloeistof zit vol vaste deeltjes.</li>
-        </ul>
-        <p style="margin: 8px 0 0;"><strong>Hoe pak je dit aan?</strong></p>
-        <h4 style="margin: 8px 0 4px;">Stap 1 &mdash; Grove scheiding: cycloonafscheider</h4>
-        <p style="margin: 0 0 6px;">Haalt 90% van het grove vuil weg. Werkt op basis van centrifugaalkracht: de vloeistof wordt in een spiraal rondgedraaid, deeltjes worden naar buiten geslingerd en zakken naar beneden, terwijl de schone samplevloeistof in het midden wordt afgetapt.</p>
-        <h4 style="margin: 8px 0 4px;">Stap 2 &mdash; Fijne filtering: patroonfilter 250 &mu;m</h4>
-        <p style="margin: 0;">Haalt de resterende kleinere deeltjes weg die door de cycloon zijn gekomen. Een patroonfilter is een cilindervormige filter die je kunt vervangen als hij vol zit.</p>
-        <p style="margin: 8px 0 0;"><strong>Waarom dit werkt:</strong></p>
-        <ul style="margin: 4px 0 0 0; padding-left: 24px;">
-            <li>De opgeloste zuurstof gaat door alle filters heen.</li>
-            <li>De vaste deeltjes worden tegengehouden (die zouden de sensor kunnen beschadigen).</li>
-            <li>Het monster blijft representatief: de opgeloste zuurstofconcentratie blijft hetzelfde.</li>
-        </ul>
-    </div>
+<p style="background: #e8f5e9; padding: 12px; border-left: 4px solid #4caf50; margin: 0;"><strong>📖 Praktijkvoorbeeld: zuurstofmeting in afvalwater</strong></p>
+<div style="background: #f5f5f5; padding: 16px; border-left: 4px solid #bdbdbd;">
+<p style="margin: 0;"><strong>De situatie:</strong></p>
+<ul style="margin: 4px 0 8px 0; padding-left: 24px;">
+<li>Je wilt zuurstof meten in afvalwater.</li>
+<li>De vloeistof zit vol vaste deeltjes.</li>
+</ul>
+<p style="margin: 8px 0 0;"><strong>Hoe pak je dit aan?</strong></p>
+<h4 style="margin: 8px 0 4px;">Stap 1 — Grove scheiding: cycloonafscheider</h4>
+<p style="margin: 0 0 6px;">Haalt 90% van het grove vuil weg. Werkt op basis van centrifugaalkracht: de vloeistof wordt in een spiraal rondgedraaid, deeltjes worden naar buiten geslingerd en zakken naar beneden, terwijl de schone samplevloeistof in het midden wordt afgetapt.</p>
+<h4 style="margin: 8px 0 4px;">Stap 2 — Fijne filtering: patroonfilter 250 μm</h4>
+<p style="margin: 0;">Haalt de resterende kleinere deeltjes weg die door de cycloon zijn gekomen. Een patroonfilter is een cilindervormige filter die je kunt vervangen als hij vol zit.</p>
+<p style="margin: 8px 0 0;"><strong>Waarom dit werkt:</strong></p>
+<ul style="margin: 4px 0 0 0; padding-left: 24px;">
+<li>De opgeloste zuurstof gaat door alle filters heen.</li>
+<li>De vaste deeltjes worden tegengehouden (die zouden de sensor kunnen beschadigen).</li>
+<li>Het monster blijft representatief: de opgeloste zuurstofconcentratie blijft hetzelfde.</li>
+</ul>
 </div>
-
-            <h4>Scheiding van gas en vloeistof</h4>
-            <p>Soms zit er gas &eacute;n vloeistof in je monster, maar je wilt er maar &eacute;&eacute;n van meten.</p>
+</div>
+<h4>Scheiding van gas en vloeistof</h4>
+<p>Soms zit er gas én vloeistof in je monster, maar je wilt er maar één van meten.</p>
 <div style="margin: 16px 0;">
-    <p style="background: #e8f5e9; padding: 12px; border-left: 4px solid #4caf50; margin: 0;"><strong>&#128214; Voorbeeld: waterstof in zuurstof meten</strong></p>
-    <div style="background: #f5f5f5; padding: 16px; border-left: 4px solid #bdbdbd;">
-        <p style="margin: 0;"><strong>Probleem:</strong> de analyzer wil alleen gas, maar het monster bevat waterdruppeltjes.</p>
-        <p style="margin: 8px 0 0;"><strong>Oplossing:</strong> afscheidingsvat met druppelvanger &mdash; een klein vat waar het gas langzamer gaat stromen, waardoor de druppels naar beneden zakken en worden afgetapt. Eventueel kan het gas vóór dit scheidingsvat worden afgekoeld om condensatie te bevorderen.</p>
-        <p style="margin: 8px 0 0;"><strong>Resultaat:</strong> droge gasstroom die representatief is in de gasfase. Het resultaat moet eventueel gecompenseerd worden voor de verwijderde hoeveelheid water.</p>
-    </div>
+<p style="background: #e8f5e9; padding: 12px; border-left: 4px solid #4caf50; margin: 0;"><strong>📖 Voorbeeld: waterstof in zuurstof meten</strong></p>
+<div style="background: #f5f5f5; padding: 16px; border-left: 4px solid #bdbdbd;">
+<p style="margin: 0;"><strong>Probleem:</strong> de analyzer wil alleen gas, maar het monster bevat waterdruppeltjes.</p>
+<p style="margin: 8px 0 0;"><strong>Oplossing:</strong> afscheidingsvat met druppelvanger — een klein vat waar het gas langzamer gaat stromen, waardoor de druppels naar beneden zakken en worden afgetapt. Eventueel kan het gas vóór dit scheidingsvat worden afgekoeld om condensatie te bevorderen.</p>
+<p style="margin: 8px 0 0;"><strong>Resultaat:</strong> droge gasstroom die representatief is in de gasfase. Het resultaat moet eventueel gecompenseerd worden voor de verwijderde hoeveelheid water.</p>
 </div>
-            <p>Belangrijke regel bij koelen in algemeen: De koeler mag alleen de stoffen weghalen die je niet wilt meten. Wat je wel wilt meten, moet wel in het te meten monster blijven!</p>
-
-            <h3 style="margin-top: 30px;">3.5 Temperatuurregeling: de juiste warmte</h3>
-            <h4>Waarom temperatuur zo&rsquo;n grote rol speelt</h4>
-            <p>Analyzers werken precies zoals mensen: ze hebben hun &quot;juiste temperatuur&quot; nodig om goed te functioneren. Maar het gaat verder dan alleen de analyzer gelukkig houden &mdash; het sample-systeem moet de monstertemperatuur aanpassen aan de specificatie van de analyzer, zonder de concentratie van de te meten componenten te veranderen.</p>
-            <p>Dit alles doe je voor de <strong>betrouwbaarheid</strong> &mdash; vier redenen waarom temperatuur de meting maakt of breekt:</p>
+</div>
+<p>Belangrijke regel bij koelen in algemeen: De koeler mag alleen de stoffen weghalen die je niet wilt meten. Wat je wel wilt meten, moet wel in het te meten monster blijven!</p>
+<h3 style="margin-top: 30px;">3.5 Temperatuurregeling: de juiste warmte</h3>
+<h4>Waarom temperatuur zo’n grote rol speelt</h4>
+<p>Analyzers werken precies zoals mensen: ze hebben hun "juiste temperatuur" nodig om goed te functioneren. Maar het gaat verder dan alleen de analyzer gelukkig houden — het sample-systeem moet de monstertemperatuur aanpassen aan de specificatie van de analyzer, zonder de concentratie van de te meten componenten te veranderen.</p>
+<p>Dit alles doe je voor de <strong>betrouwbaarheid</strong> — vier redenen waarom temperatuur de meting maakt of breekt:</p>
 <div style="display: flex; flex-wrap: wrap; gap: 12px; margin: 16px 0; max-width: 780px;">
-    <div style="flex: 1 1 220px; min-width: 240px; background: #fff; border-left: 4px solid #4caf50; padding: 16px; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,0.1);">
-        <h4 style="margin: 0 0 8px; color: #333;">1. Nauwkeurigheid van de meting</h4>
-        <p style="margin: 0; font-size: 14px; color: #333;">Door de monstertemperatuur binnen de specificatie van het analyzer-systeem te houden, waarborg je de nauwkeurigheid van elke meting.</p>
-    </div>
-    <div style="flex: 1 1 220px; min-width: 240px; background: #fff; border-left: 4px solid #2196f3; padding: 16px; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,0.1);">
-        <h4 style="margin: 0 0 8px; color: #333;">2. Chemische samenstelling behouden</h4>
-        <p style="margin: 0 0 6px; font-size: 14px; color: #333;">De temperatuur bepaalt of de chemische samenstelling van het monster verandert.</p>
-        <p style="margin: 0; font-size: 13px; color: #555;"><em>Voorbeeld:</em> bij emissiemeting van rookgassen kan condensatie optreden; SO<sub>x</sub> lost makkelijk op in water. Sample ruim boven het dauwpunt houden via een verwarmde leiding.</p>
-    </div>
-    <div style="flex: 1 1 220px; min-width: 240px; background: #fff; border-left: 4px solid #ff9800; padding: 16px; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,0.1);">
-        <h4 style="margin: 0 0 8px; color: #333;">3. Fysische eigenschappen op orde</h4>
-        <p style="margin: 0 0 6px; font-size: 14px; color: #333;">Viscositeit, stollen, bevriezen, ontgassing &mdash; al deze eigenschappen moeten binnen de limieten van het meetsysteem blijven.</p>
-        <p style="margin: 0; font-size: 13px; color: #555;"><em>Voorbeeld:</em> bij viscositeitsmeting van stookolie neemt de viscositeit toe bij lage temperatuur en kan het monster niet meer naar de analyzer verpompt worden. Houd het monster op de juiste temperatuur.</p>
-    </div>
-    <div style="flex: 1 1 220px; min-width: 240px; background: #fff; border-left: 4px solid #9c27b0; padding: 16px; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,0.1);">
-        <h4 style="margin: 0 0 8px; color: #333;">4. Levensduur van de analyzer</h4>
-        <p style="margin: 0 0 6px; font-size: 14px; color: #333;">Een analyzer die te warm wordt is slijtage-gevoeliger, kan gaan afwijken en sneller defect raken.</p>
-        <p style="margin: 0; font-size: 13px; color: #555;"><em>Voorbeeld:</em> pH-elektrodes hebben een maximale gebruikstemperatuur rond 80&deg;C. Boven deze grens neemt de levensduur sterk af. Afkoelen tot onder de gebruikstemperatuur is de oplossing.</p>
-    </div>
+<div style="flex: 1 1 220px; min-width: 240px; background: #fff; border-left: 4px solid #4caf50; padding: 16px; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,0.1);">
+<h4 style="margin: 0 0 8px; color: #333;">1. Nauwkeurigheid van de meting</h4>
+<p style="margin: 0; font-size: 14px; color: #333;">Door de monstertemperatuur binnen de specificatie van het analyzer-systeem te houden, waarborg je de nauwkeurigheid van elke meting.</p>
 </div>
-
-            <h4>Hoe regel je de temperatuur?</h4>
-            <p>Twee hoofd-strategieën, afhankelijk van of je naar de analyzer-temperatuur toe moet werken (afkoelen of opwarmen) of die juist constant moet houden gedurende het transport.</p>
+<div style="flex: 1 1 220px; min-width: 240px; background: #fff; border-left: 4px solid #2196f3; padding: 16px; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,0.1);">
+<h4 style="margin: 0 0 8px; color: #333;">2. Chemische samenstelling behouden</h4>
+<p style="margin: 0 0 6px; font-size: 14px; color: #333;">De temperatuur bepaalt of de chemische samenstelling van het monster verandert.</p>
+<p style="margin: 0; font-size: 13px; color: #555;"><em>Voorbeeld:</em> bij emissiemeting van rookgassen kan condensatie optreden; SO<sub>x</sub> lost makkelijk op in water. Sample ruim boven het dauwpunt houden via een verwarmde leiding.</p>
+</div>
+<div style="flex: 1 1 220px; min-width: 240px; background: #fff; border-left: 4px solid #ff9800; padding: 16px; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,0.1);">
+<h4 style="margin: 0 0 8px; color: #333;">3. Fysische eigenschappen op orde</h4>
+<p style="margin: 0 0 6px; font-size: 14px; color: #333;">Viscositeit, stollen, bevriezen, ontgassing — al deze eigenschappen moeten binnen de limieten van het meetsysteem blijven.</p>
+<p style="margin: 0; font-size: 13px; color: #555;"><em>Voorbeeld:</em> bij viscositeitsmeting van stookolie neemt de viscositeit toe bij lage temperatuur en kan het monster niet meer naar de analyzer verpompt worden. Houd het monster op de juiste temperatuur.</p>
+</div>
+<div style="flex: 1 1 220px; min-width: 240px; background: #fff; border-left: 4px solid #9c27b0; padding: 16px; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,0.1);">
+<h4 style="margin: 0 0 8px; color: #333;">4. Levensduur van de analyzer</h4>
+<p style="margin: 0 0 6px; font-size: 14px; color: #333;">Een analyzer die te warm wordt is slijtage-gevoeliger, kan gaan afwijken en sneller defect raken.</p>
+<p style="margin: 0; font-size: 13px; color: #555;"><em>Voorbeeld:</em> pH-elektrodes hebben een maximale gebruikstemperatuur rond 80°C. Boven deze grens neemt de levensduur sterk af. Afkoelen tot onder de gebruikstemperatuur is de oplossing.</p>
+</div>
+</div>
+<h4>Hoe regel je de temperatuur?</h4>
+<p>Twee hoofd-strategieën, afhankelijk van of je naar de analyzer-temperatuur toe moet werken (afkoelen of opwarmen) of die juist constant moet houden gedurende het transport.</p>
 <div style="display: flex; flex-wrap: wrap; gap: 12px; margin: 16px 0; max-width: 780px;">
-    <div style="flex: 1 1 320px; min-width: 280px; background: #fff; border-left: 4px solid #006445; padding: 16px; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,0.1);">
-        <h4 style="margin: 0 0 8px; color: #333;">&#129482; Afkoelen of opwarmen &mdash; warmtewisselaar</h4>
-        <p style="margin: 0 0 8px; font-size: 14px; color: #333;">Een warmtewisselaar draagt warmte over tussen twee media zonder dat ze in direct contact komen. Het procesmonster loopt door de wisselaar; aan de andere kant zit koelwater, lucht of een olie- of waterbad.</p>
-        <p style="margin: 0; font-size: 13px; color: #c62828;"><strong>&#9888;&#65039; Niet te snel afkoelen:</strong> dat geeft schokeffecten, stoffen kunnen plotseling neerslaan en het monster verliest representativiteit.</p>
-    </div>
-    <div style="flex: 1 1 320px; min-width: 280px; background: #fff; border-left: 4px solid #e65100; padding: 16px; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,0.1);">
-        <h4 style="margin: 0 0 8px; color: #333;">&#128293; Op temperatuur houden &mdash; verwarmde leidingen</h4>
-        <ul style="margin: 0; padding-left: 20px; font-size: 14px; color: #333;">
-            <li>Elektrische heating-trace of stoom rondom de sample-leiding.</li>
-            <li>Isolatie eromheen om warmte vast te houden.</li>
-            <li>Temperatuursensor + regelaar voor constante temperatuur (kastverwarming).</li>
-        </ul>
-    </div>
+<div style="flex: 1 1 320px; min-width: 280px; background: #fff; border-left: 4px solid #006445; padding: 16px; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,0.1);">
+<h4 style="margin: 0 0 8px; color: #333;">🧊 Afkoelen of opwarmen — warmtewisselaar</h4>
+<p style="margin: 0 0 8px; font-size: 14px; color: #333;">Een warmtewisselaar draagt warmte over tussen twee media zonder dat ze in direct contact komen. Het procesmonster loopt door de wisselaar; aan de andere kant zit koelwater, lucht of een olie- of waterbad.</p>
+<p style="margin: 0; font-size: 13px; color: #c62828;"><strong>⚠️ Niet te snel afkoelen:</strong> dat geeft schokeffecten, stoffen kunnen plotseling neerslaan en het monster verliest representativiteit.</p>
 </div>
-
+<div style="flex: 1 1 320px; min-width: 280px; background: #fff; border-left: 4px solid #e65100; padding: 16px; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,0.1);">
+<h4 style="margin: 0 0 8px; color: #333;">🔥 Op temperatuur houden — verwarmde leidingen</h4>
+<ul style="margin: 0; padding-left: 20px; font-size: 14px; color: #333;">
+<li>Elektrische heating-trace of stoom rondom de sample-leiding.</li>
+<li>Isolatie eromheen om warmte vast te houden.</li>
+<li>Temperatuursensor + regelaar voor constante temperatuur (kastverwarming).</li>
+</ul>
+</div>
+</div>
 <!-- FOTO PLACEHOLDER - Briefing M3-H3-foto-10 -->
 <div style="background: #f5f5f5; border: 2px dashed #bdbdbd; border-radius: 8px; padding: 20px; margin: 16px 0; max-width: 400px;">
-    <p style="margin: 0 0 8px; color: #757575;"><strong>&#128247; M3-H3-foto-10: Heated sample line met elektrische tracing</strong></p>
-    <p style="margin: 0 0 12px; font-size: 14px; color: #666;">Verwarmde sample-leiding gewikkeld in isolatie met zichtbare heating-trace kabel; voorkomt condensatie bij ammoniak/rookgas-sampling.</p>
-    <div style="background: #fff; padding: 12px; border-radius: 4px; font-size: 13px;">
-        <strong>Elementen:</strong> isolatiemateriaal, heating-trace, aansluitdoos, sample-leiding
+<p style="margin: 0 0 8px; color: #757575;"><strong>📷 M3-H3-foto-10: Heated sample line met elektrische tracing</strong></p>
+<p style="margin: 0 0 12px; font-size: 14px; color: #666;">Verwarmde sample-leiding gewikkeld in isolatie met zichtbare heating-trace kabel; voorkomt condensatie bij ammoniak/rookgas-sampling.</p>
+<div style="background: #fff; padding: 12px; border-radius: 4px; font-size: 13px;">
+<strong>Elementen:</strong> isolatiemateriaal, heating-trace, aansluitdoos, sample-leiding
     </div>
 </div>
 <!-- /FOTO PLACEHOLDER -->
-
 <div style="margin: 16px 0;">
-    <p style="background: #e8f5e9; padding: 12px; border-left: 4px solid #4caf50; margin: 0;"><strong>&#128214; Praktijkvoorbeeld: vochtmeting in gas</strong></p>
-    <div style="background: #f5f5f5; padding: 16px; border-left: 4px solid #bdbdbd;">
-        <p style="margin: 0;"><strong>De situatie:</strong></p>
-        <ul style="margin: 4px 0 8px 0; padding-left: 24px;">
-            <li>Aardgas bij -20&deg;C en 40 bar.</li>
-            <li>Water kan kristallen vormen bij deze condities.</li>
-            <li>De analyzer heeft gas nodig bij de juiste condities (zonder ijskristallen).</li>
-        </ul>
-        <p style="margin: 8px 0 0;"><strong>Wat moet je doen?</strong></p>
-        <ul style="margin: 4px 0 8px 0; padding-left: 24px;">
-            <li>Druk verlagen naar 2 bar.</li>
-            <li>Gecontroleerd opwarmen naar +20&deg;C.</li>
-            <li>Het aanwezige water zal bij die condities in de gasfase zijn.</li>
-            <li>Nu kan de analyzer het water meten.</li>
-            <li>Het monster blijft representatief (dezelfde hoeveelheid water, alleen andere vorm).</li>
-        </ul>
-    </div>
+<p style="background: #e8f5e9; padding: 12px; border-left: 4px solid #4caf50; margin: 0;"><strong>📖 Praktijkvoorbeeld: vochtmeting in gas</strong></p>
+<div style="background: #f5f5f5; padding: 16px; border-left: 4px solid #bdbdbd;">
+<p style="margin: 0;"><strong>De situatie:</strong></p>
+<ul style="margin: 4px 0 8px 0; padding-left: 24px;">
+<li>Aardgas bij -20°C en 40 bar.</li>
+<li>Water kan kristallen vormen bij deze condities.</li>
+<li>De analyzer heeft gas nodig bij de juiste condities (zonder ijskristallen).</li>
+</ul>
+<p style="margin: 8px 0 0;"><strong>Wat moet je doen?</strong></p>
+<ul style="margin: 4px 0 8px 0; padding-left: 24px;">
+<li>Druk verlagen naar 2 bar.</li>
+<li>Gecontroleerd opwarmen naar +20°C.</li>
+<li>Het aanwezige water zal bij die condities in de gasfase zijn.</li>
+<li>Nu kan de analyzer het water meten.</li>
+<li>Het monster blijft representatief (dezelfde hoeveelheid water, alleen andere vorm).</li>
+</ul>
 </div>
-            <h4>Vochtmeting in gas: snelheid is alles</h4>
-            <ol>
-                <li><strong>Druk zo snel mogelijk verlagen:</strong> reduceer de druk verwarmd en zo dicht mogelijk bij het sample-punt. Hiermee voorkom je dat hoge druk door de hele installatie loopt en verminder je het risico op condensatie en ijsvorming (denk aan aardgas bij -20&deg;C en 40 bar, waar ijskristallen snel kunnen ontstaan).</li>
-                <li><strong>Altijd boven het dauwpunt blijven:</strong> gebruik verwarmde leidingen zodat het monster nergens in het sample-systeem onder het dauwpunt komt. Na de drukval warm je het gas op om fase-overgangen te voorkomen.</li>
-                <li><strong>Volume van het sample-systeem minimaliseren:</strong> houd het totale volume zo klein mogelijk om een snelle responstijd te garanderen. Hoe compacter het systeem, hoe sneller veranderingen in het procesgas zichtbaar worden bij de analyzer.</li>
-            </ol>
-
+</div>
+<h4>Vochtmeting in gas: snelheid is alles</h4>
+<ol>
+<li><strong>Druk zo snel mogelijk verlagen:</strong> reduceer de druk verwarmd en zo dicht mogelijk bij het sample-punt. Hiermee voorkom je dat hoge druk door de hele installatie loopt en verminder je het risico op condensatie en ijsvorming (denk aan aardgas bij -20°C en 40 bar, waar ijskristallen snel kunnen ontstaan).</li>
+<li><strong>Altijd boven het dauwpunt blijven:</strong> gebruik verwarmde leidingen zodat het monster nergens in het sample-systeem onder het dauwpunt komt. Na de drukval warm je het gas op om fase-overgangen te voorkomen.</li>
+<li><strong>Volume van het sample-systeem minimaliseren:</strong> houd het totale volume zo klein mogelijk om een snelle responstijd te garanderen. Hoe compacter het systeem, hoe sneller veranderingen in het procesgas zichtbaar worden bij de analyzer.</li>
+</ol>
 <div style="max-width: 780px; margin: 20px 0;">
-    <div style="border: 2px solid #b0bd36; border-radius: 10px; padding: 12px; margin: 14px 0;">
-        <p style="margin: 0 0 8px;"><strong>Bij meting van vocht in aardgas (-20&deg;C, 40 bar) wordt de druk eerst verlaagd naar 2 bar. Wat is een typisch fysisch effect waar je rekening mee moet houden?</strong></p>
-        <details style="border: 1px solid #e6e6e6; border-radius: 8px; padding: 8px; margin: 8px 0;">
-            <summary style="list-style: none; cursor: pointer; background: #006445; color: #fff; padding: 8px 10px; border-radius: 6px; display: block;">A) Het gas warmt op door de drukverlaging</summary>
-            <div style="margin-top: 8px;">&#10060; Bij gasexpansie koelt het gas juist af (Joule-Thomson), niet andersom.</div>
-        </details>
-        <details style="border: 1px solid #e6e6e6; border-radius: 8px; padding: 8px; margin: 8px 0;">
-            <summary style="list-style: none; cursor: pointer; background: #006445; color: #fff; padding: 8px 10px; border-radius: 6px; display: block;">B) Het gas koelt verder af door het Joule-Thomson-effect, met risico op ijsvorming</summary>
-            <div style="margin-top: 8px;">&#9989; Correct! Bij grote drukval daalt de temperatuur extra; bij vochtig gas kan dat tot ijskristallen leiden die de regelaar dichtvriezen.</div>
-        </details>
-        <details style="border: 1px solid #e6e6e6; border-radius: 8px; padding: 8px; margin: 8px 0;">
-            <summary style="list-style: none; cursor: pointer; background: #006445; color: #fff; padding: 8px 10px; border-radius: 6px; display: block;">C) Het water in het gas wordt automatisch gefiltreerd</summary>
-            <div style="margin-top: 8px;">&#10060; Drukverlaging filtert geen water; daarvoor heb je actieve scheiding (waterafscheider, koeler) nodig.</div>
-        </details>
-        <details style="border: 1px solid #e6e6e6; border-radius: 8px; padding: 8px; margin: 8px 0;">
-            <summary style="list-style: none; cursor: pointer; background: #006445; color: #fff; padding: 8px 10px; border-radius: 6px; display: block;">D) Het gas wordt automatisch droger</summary>
-            <div style="margin-top: 8px;">&#10060; Het absolute watergehalte verandert niet door alleen drukverlaging; dauwpunt en fasegedrag wel.</div>
-        </details>
-    </div>
+<div style="border: 2px solid #b0bd36; border-radius: 10px; padding: 12px; margin: 14px 0;">
+<p style="margin: 0 0 8px;"><strong>Bij meting van vocht in aardgas (-20°C, 40 bar) wordt de druk eerst verlaagd naar 2 bar. Wat is een typisch fysisch effect waar je rekening mee moet houden?</strong></p>
+<details style="border: 1px solid #e6e6e6; border-radius: 8px; padding: 8px; margin: 8px 0;">
+<summary style="list-style: none; cursor: pointer; background: #006445; color: #fff; padding: 8px 10px; border-radius: 6px; display: block;">A) Het gas warmt op door de drukverlaging</summary>
+<div style="margin-top: 8px;">❌ Bij gasexpansie koelt het gas juist af (Joule-Thomson), niet andersom.</div>
+</details>
+<details style="border: 1px solid #e6e6e6; border-radius: 8px; padding: 8px; margin: 8px 0;">
+<summary style="list-style: none; cursor: pointer; background: #006445; color: #fff; padding: 8px 10px; border-radius: 6px; display: block;">B) Het gas koelt verder af door het Joule-Thomson-effect, met risico op ijsvorming</summary>
+<div style="margin-top: 8px;">✅ Correct! Bij grote drukval daalt de temperatuur extra; bij vochtig gas kan dat tot ijskristallen leiden die de regelaar dichtvriezen.</div>
+</details>
+<details style="border: 1px solid #e6e6e6; border-radius: 8px; padding: 8px; margin: 8px 0;">
+<summary style="list-style: none; cursor: pointer; background: #006445; color: #fff; padding: 8px 10px; border-radius: 6px; display: block;">C) Het water in het gas wordt automatisch gefiltreerd</summary>
+<div style="margin-top: 8px;">❌ Drukverlaging filtert geen water; daarvoor heb je actieve scheiding (waterafscheider, koeler) nodig.</div>
+</details>
+<details style="border: 1px solid #e6e6e6; border-radius: 8px; padding: 8px; margin: 8px 0;">
+<summary style="list-style: none; cursor: pointer; background: #006445; color: #fff; padding: 8px 10px; border-radius: 6px; display: block;">D) Het gas wordt automatisch droger</summary>
+<div style="margin-top: 8px;">❌ Het absolute watergehalte verandert niet door alleen drukverlaging; dauwpunt en fasegedrag wel.</div>
+</details>
 </div>
-
-            <h3 style="margin-top: 30px;">3.6 Drukregeling: Constante druk = Betrouwbare meting</h3>
-            <p>De onzichtbare kracht die alles bepaalt</p>
-            <p>Druk is een van die dingen die je niet ziet, maar die enorm belangrijk zijn. Denk aan een fietsband: met te weinig druk fiets je zwaar en krijg je een lekke band, met te veel druk knalt hij uit elkaar. In de plant is het precies hetzelfde verhaal, maar dan met veel grotere gevolgen.</p>
-            <p>In een typisch proces heb je vaak behoorlijk hoge drukken - denk aan 10, 20, soms wel 100 bar. Dat is 100 keer de luchtdruk die je normaal hebt! Maar je analyzer? Die kan daar meestal helemaal niet tegen. Die is ontworpen voor lage drukken, vaak maar 2 of 3 bar. Als je die hoge procesdruk rechtstreeks op je analyzer zet, dan knalt hij uit elkaar.</p>
-            <p>Maar druk doet nog veel meer. Het bepaalt de veiligheid (te hoge druk is levensgevaarlijk), het bepaalt soms hoe goed je analyzer meet (wisselende druk = wisselende meetwaarden), en het bepaalt zelfs of iets gas blijft of juist vloeistof wordt. Hoge druk kan een gas laten condenseren tot vloeistof, lage druk kan lichte delen van een vloeistof laten te verdampen.</p>
-            <p>Laten we kijken waarom drukregeling zo cruciaal is en hoe je het goed doet.</p>
-
+</div>
+<h3 style="margin-top: 30px;">3.6 Drukregeling: Constante druk = Betrouwbare meting</h3>
+<p>De onzichtbare kracht die alles bepaalt</p>
+<p>Druk is een van die dingen die je niet ziet, maar die enorm belangrijk zijn. Denk aan een fietsband: met te weinig druk fiets je zwaar en krijg je een lekke band, met te veel druk knalt hij uit elkaar. In de plant is het precies hetzelfde verhaal, maar dan met veel grotere gevolgen.</p>
+<p>In een typisch proces heb je vaak behoorlijk hoge drukken - denk aan 10, 20, soms wel 100 bar. Dat is 100 keer de luchtdruk die je normaal hebt! Maar je analyzer? Die kan daar meestal helemaal niet tegen. Die is ontworpen voor lage drukken, vaak maar 2 of 3 bar. Als je die hoge procesdruk rechtstreeks op je analyzer zet, dan knalt hij uit elkaar.</p>
+<p>Maar druk doet nog veel meer. Het bepaalt de veiligheid (te hoge druk is levensgevaarlijk), het bepaalt soms hoe goed je analyzer meet (wisselende druk = wisselende meetwaarden), en het bepaalt zelfs of iets gas blijft of juist vloeistof wordt. Hoge druk kan een gas laten condenseren tot vloeistof, lage druk kan lichte delen van een vloeistof laten te verdampen.</p>
+<p>Laten we kijken waarom drukregeling zo cruciaal is en hoe je het goed doet.</p>
 <div style="text-align: left; margin: 20px 0;">
-    <img src="media/ana-m3-h3-infographic3-drukregeling-multistage.png" alt="Drukregeling single-stage vs multi-stage" style="max-width: 620px; width: 100%; height: auto; border-radius: 4px;" loading="lazy" />
-    <p style="font-size: 0.85rem; color: #666; margin-top: 6px;"><em>Vergelijking single-stage vs. multi-stage drukregeling</em></p>
+<img alt="Drukregeling single-stage vs multi-stage" loading="lazy" src="media/ana-m3-h3-infographic3-drukregeling-multistage.png" style="max-width: 620px; width: 100%; height: auto; border-radius: 4px;"/>
+<p style="font-size: 0.85rem; color: #666; margin-top: 6px;"><em>Vergelijking single-stage vs. multi-stage drukregeling</em></p>
 </div>
-
 <!-- FOTO PLACEHOLDER - Briefing M3-H3-foto-11 -->
 <div style="background: #f5f5f5; border: 2px dashed #bdbdbd; border-radius: 8px; padding: 20px; margin: 16px 0; max-width: 400px;">
-    <p style="margin: 0 0 8px; color: #757575;"><strong>&#128247; M3-H3-foto-11: Multi-stage drukregelaar op sample-panel</strong></p>
-    <p style="margin: 0 0 12px; font-size: 14px; color: #666;">Sample-panel met twee drukregelaars in serie, elk met drukmeter voor en na, gemonteerd op RVS-plaat.</p>
-    <div style="background: #fff; padding: 12px; border-radius: 4px; font-size: 13px;">
-        <strong>Elementen:</strong> twee drukregelaars in serie, manometers, RVS-plaat, professionele analyzer-sample-system
+<p style="margin: 0 0 8px; color: #757575;"><strong>📷 M3-H3-foto-11: Multi-stage drukregelaar op sample-panel</strong></p>
+<p style="margin: 0 0 12px; font-size: 14px; color: #666;">Sample-panel met twee drukregelaars in serie, elk met drukmeter voor en na, gemonteerd op RVS-plaat.</p>
+<div style="background: #fff; padding: 12px; border-radius: 4px; font-size: 13px;">
+<strong>Elementen:</strong> twee drukregelaars in serie, manometers, RVS-plaat, professionele analyzer-sample-system
     </div>
 </div>
 <!-- /FOTO PLACEHOLDER -->
-
-            <h4>Drie redenen voor drukregeling</h4>
+<h4>Drie redenen voor drukregeling</h4>
 <div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; margin: 20px 0; max-width: 780px;">
-    <div style="flex: 1 1 220px; max-width: 260px; border: 1px solid #ccc; border-radius: 10px; padding: 15px; background: #fff;">
-        <div style="display: flex; align-items: center; margin-bottom: 10px;">
-            <div style="width: 32px; height: 32px; border-radius: 50%; background: #e74c3c; color: white; display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-weight: bold;">1</div>
-            <h4 style="margin: 0 0 0 10px; font-size: 16px; color: #333;">Bescherming van de analyzer</h4>
-        </div>
-        <p style="font-size: 14px; color: #333; margin: 0 0 6px;">De meeste analyzers zijn ontworpen voor lage druk (bijv. 2 bar), terwijl het proces vaak op 10-100 bar staat. Te hoge druk maakt de analyzer kapot.</p>
-        <p style="font-size: 13px; color: #555; margin: 0;"><em>Oplossing:</em> drukregelaar die de druk verlaagt, gecombineerd met een veiligheidsventiel dat de installatie beschermt tegen overdruk.</p>
-    </div>
-    <div style="flex: 1 1 220px; max-width: 260px; border: 1px solid #ccc; border-radius: 10px; padding: 15px; background: #fff;">
-        <div style="display: flex; align-items: center; margin-bottom: 10px;">
-            <div style="width: 32px; height: 32px; border-radius: 50%; background: #3498db; color: white; display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-weight: bold;">2</div>
-            <h4 style="margin: 0 0 0 10px; font-size: 16px; color: #333;">Constante meetomstandigheden</h4>
-        </div>
-        <p style="font-size: 14px; color: #333; margin: 0 0 6px;">Voor een betrouwbare meting in gassen is constante druk vaak essentieel: wisselende druk geeft wisselende dichtheid, en daarmee wisselende meetwaarden.</p>
-        <p style="font-size: 13px; color: #555; margin: 0;"><em>Sommige analyzers</em> beschikken over druk- en temperatuurcompensatie als alternatief.</p>
-    </div>
-    <div style="flex: 1 1 220px; max-width: 260px; border: 1px solid #ccc; border-radius: 10px; padding: 15px; background: #fff;">
-        <div style="display: flex; align-items: center; margin-bottom: 10px;">
-            <div style="width: 32px; height: 32px; border-radius: 50%; background: #f39c12; color: white; display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-weight: bold;">3</div>
-            <h4 style="margin: 0 0 0 10px; font-size: 16px; color: #333;">Fase-gedrag beïnvloeden</h4>
-        </div>
-        <p style="font-size: 14px; color: #333; margin: 0 0 6px;">Druk bepaalt of iets in de gas- of vloeistoffase is &mdash; net als temperatuur:</p>
-        <ul style="margin: 0; padding-left: 18px; font-size: 13px; color: #333;">
-            <li><strong>Hoge druk:</strong> gassen kunnen condenseren tot vloeistof.</li>
-            <li><strong>Lage druk:</strong> vloeistoffen kunnen verdampen tot gas.</li>
-        </ul>
-    </div>
+<div style="flex: 1 1 220px; max-width: 260px; border: 1px solid #ccc; border-radius: 10px; padding: 15px; background: #fff;">
+<div style="display: flex; align-items: center; margin-bottom: 10px;">
+<div style="width: 32px; height: 32px; border-radius: 50%; background: #e74c3c; color: white; display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-weight: bold;">1</div>
+<h4 style="margin: 0 0 0 10px; font-size: 16px; color: #333;">Bescherming van de analyzer</h4>
+</div>
+<p style="font-size: 14px; color: #333; margin: 0 0 6px;">De meeste analyzers zijn ontworpen voor lage druk (bijv. 2 bar), terwijl het proces vaak op 10-100 bar staat. Te hoge druk maakt de analyzer kapot.</p>
+<p style="font-size: 13px; color: #555; margin: 0;"><em>Oplossing:</em> drukregelaar die de druk verlaagt, gecombineerd met een veiligheidsventiel dat de installatie beschermt tegen overdruk.</p>
+</div>
+<div style="flex: 1 1 220px; max-width: 260px; border: 1px solid #ccc; border-radius: 10px; padding: 15px; background: #fff;">
+<div style="display: flex; align-items: center; margin-bottom: 10px;">
+<div style="width: 32px; height: 32px; border-radius: 50%; background: #3498db; color: white; display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-weight: bold;">2</div>
+<h4 style="margin: 0 0 0 10px; font-size: 16px; color: #333;">Constante meetomstandigheden</h4>
+</div>
+<p style="font-size: 14px; color: #333; margin: 0 0 6px;">Voor een betrouwbare meting in gassen is constante druk vaak essentieel: wisselende druk geeft wisselende dichtheid, en daarmee wisselende meetwaarden.</p>
+<p style="font-size: 13px; color: #555; margin: 0;"><em>Sommige analyzers</em> beschikken over druk- en temperatuurcompensatie als alternatief.</p>
+</div>
+<div style="flex: 1 1 220px; max-width: 260px; border: 1px solid #ccc; border-radius: 10px; padding: 15px; background: #fff;">
+<div style="display: flex; align-items: center; margin-bottom: 10px;">
+<div style="width: 32px; height: 32px; border-radius: 50%; background: #f39c12; color: white; display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-weight: bold;">3</div>
+<h4 style="margin: 0 0 0 10px; font-size: 16px; color: #333;">Fase-gedrag beïnvloeden</h4>
+</div>
+<p style="font-size: 14px; color: #333; margin: 0 0 6px;">Druk bepaalt of iets in de gas- of vloeistoffase is — net als temperatuur:</p>
+<ul style="margin: 0; padding-left: 18px; font-size: 13px; color: #333;">
+<li><strong>Hoge druk:</strong> gassen kunnen condenseren tot vloeistof.</li>
+<li><strong>Lage druk:</strong> vloeistoffen kunnen verdampen tot gas.</li>
+</ul>
+</div>
 </div>
 <div style="margin: 16px 0;">
-    <p style="background: #e8f5e9; padding: 12px; border-left: 4px solid #4caf50; margin: 0;"><strong>&#128214; Praktijkvoorbeeld: propaan van 40 naar 2 bar kamertemperatuur</strong></p>
-    <div style="background: #f5f5f5; padding: 16px; border-left: 4px solid #bdbdbd;">
-        <p style="margin: 0;"><strong>Het probleem:</strong></p>
-        <ul style="margin: 4px 0 8px 0; padding-left: 24px;">
-            <li>Propaan in de leiding: 40 bar (vloeistoffase).</li>
-            <li>Analyzer heeft nodig: 2 bar (gasfase).</li>
-            <li>Verschil: er moet 38 bar gereduceerd worden.</li>
-        </ul>
-        <p style="margin: 8px 0 0;"><strong>Methode 1: enkel-traps (single stage)</strong> &mdash; één drukregelaar van 40 naar 2 bar direct.</p>
-        <p style="margin: 4px 0 0;"><em>Nadelen:</em></p>
-        <ul style="margin: 4px 0 8px 0; padding-left: 24px;">
-            <li>Grote drukval in één keer kan instabiliteit (minder nauwkeurig) geven.</li>
-            <li>IJsvorming door expansie (Joule-Thomson-effect: gas koelt af als druk daalt).</li>
-        </ul>
-        <p style="margin: 8px 0 0;"><strong>Methode 2: twee-traps (dual stage)</strong> &mdash; eerste regelaar van 40 naar 10 bar, tweede regelaar van 10 naar 2 bar.</p>
-        <p style="margin: 4px 0 0;"><em>Voordelen:</em></p>
-        <ul style="margin: 4px 0 0 0;padding-left: 24px;">
-            <li>Stabielere druk.</li>
-            <li>Minder koeling.</li>
-            <li>Nauwkeuriger.</li>
-            <li>Veiliger.</li>
-        </ul>
-    </div>
+<p style="background: #e8f5e9; padding: 12px; border-left: 4px solid #4caf50; margin: 0;"><strong>📖 Praktijkvoorbeeld: propaan van 40 naar 2 bar kamertemperatuur</strong></p>
+<div style="background: #f5f5f5; padding: 16px; border-left: 4px solid #bdbdbd;">
+<p style="margin: 0;"><strong>Het probleem:</strong></p>
+<ul style="margin: 4px 0 8px 0; padding-left: 24px;">
+<li>Propaan in de leiding: 40 bar (vloeistoffase).</li>
+<li>Analyzer heeft nodig: 2 bar (gasfase).</li>
+<li>Verschil: er moet 38 bar gereduceerd worden.</li>
+</ul>
+<p style="margin: 8px 0 0;"><strong>Methode 1: enkel-traps (single stage)</strong> — één drukregelaar van 40 naar 2 bar direct.</p>
+<p style="margin: 4px 0 0;"><em>Nadelen:</em></p>
+<ul style="margin: 4px 0 8px 0; padding-left: 24px;">
+<li>Grote drukval in één keer kan instabiliteit (minder nauwkeurig) geven.</li>
+<li>IJsvorming door expansie (Joule-Thomson-effect: gas koelt af als druk daalt).</li>
+</ul>
+<p style="margin: 8px 0 0;"><strong>Methode 2: twee-traps (dual stage)</strong> — eerste regelaar van 40 naar 10 bar, tweede regelaar van 10 naar 2 bar.</p>
+<p style="margin: 4px 0 0;"><em>Voordelen:</em></p>
+<ul style="margin: 4px 0 0 0;padding-left: 24px;">
+<li>Stabielere druk.</li>
+<li>Minder koeling.</li>
+<li>Nauwkeuriger.</li>
+<li>Veiliger.</li>
+</ul>
 </div>
-            <details style="border: 2px solid #b0bd36; border-radius: 12px; padding: 10px 12px; margin: 14px 0; max-width: 780px;">
-    <summary style="cursor: pointer; color: #006445;"><strong>&#128161; Wanneer twee-traps beter is &mdash; vier voordelen + vuistregel</strong></summary>
-    <div style="margin-top: 8px; color: #333;">
+</div>
+<details style="border: 2px solid #b0bd36; border-radius: 12px; padding: 10px 12px; margin: 14px 0; max-width: 780px;">
+<summary style="cursor: pointer; color: #006445;"><strong>💡 Wanneer twee-traps beter is — vier voordelen + vuistregel</strong></summary>
+<div style="margin-top: 8px; color: #333;">
 <h4>Wanneer twee-traps beter is</h4>
-            <p>Bij grote drukverschillen, zoals propaan van 40 naar 2 bar of ijkgassen van 200 bar, geef je de voorkeur aan een tweetraps (dual-stage) drukregelaar:</p>
-            <p><strong>Stabielere uitgangsdruk:</strong> De tweede trap compenseert automatisch de variatie uit de eerste trap. Bij een single-stage regelaar gaat de uitgangsdruk schommelen naarmate de inlaatdruk verandert, bij twee traps blijft deze nagenoeg constant.</p>
-            <p><strong>Minder afkoeling, minder kans op dichtvriezen:</strong> Wanneer gas door een drukregelaar gaat, daalt de temperatuur door de plotselinge drukval. Dit heet het <em>Joule-Thomson-effect</em>: hoe groter de drukval, hoe sterker de afkoeling. Bij voldoende afkoeling bevriest waterdamp in het gas en kan de regelaar blokkeren ("dichtvriezen"). Twee kleinere drukstappen spreiden dit effect, waardoor de temperatuurdaling per stap veel kleiner is en het risico op ijsvorming sterk afneemt.</p>
-            <p><strong>Nauwkeurigere</strong> <strong>regeling</strong>: Doordat de tweede trap op een al gestabiliseerde lagere druk werkt, zijn drukschommelingen bij wisselende flow minimaal. Dit is essentieel bij gasanalyse en meetapparatuur.</p>
-            <p><strong>Minder</strong> <strong>kans</strong> <strong>op</strong> <strong>drukkruip</strong>: Bij een single-stage regelaar kan de druk aan de uitgang langzaam oplopen doordat het regelventiel niet 100% dicht zit. Dit noem je <em>drukkruip</em> (in het Engels: "creep"). De tweede trap vangt dit op, waardoor de uitgangsdruk stabiel blijft.</p>
-            <p>  <em>Vuistregel:</em> <em>kies</em> <em>altijd</em> <em>twee-traps</em> <em>bij</em> <em>analysegassen,</em> <em>continue</em> <em>processen,</em> <em>temperatuurgevoelige</em> <em>toepassingen</em> <em>en</em> <em>situaties</em> <em>met</em> <em>kans</em> <em>op</em> <em>dichtvriezen.</em></p>
-    </div>
+<p>Bij grote drukverschillen, zoals propaan van 40 naar 2 bar of ijkgassen van 200 bar, geef je de voorkeur aan een tweetraps (dual-stage) drukregelaar:</p>
+<p><strong>Stabielere uitgangsdruk:</strong> De tweede trap compenseert automatisch de variatie uit de eerste trap. Bij een single-stage regelaar gaat de uitgangsdruk schommelen naarmate de inlaatdruk verandert, bij twee traps blijft deze nagenoeg constant.</p>
+<p><strong>Minder afkoeling, minder kans op dichtvriezen:</strong> Wanneer gas door een drukregelaar gaat, daalt de temperatuur door de plotselinge drukval. Dit heet het <em>Joule-Thomson-effect</em>: hoe groter de drukval, hoe sterker de afkoeling. Bij voldoende afkoeling bevriest waterdamp in het gas en kan de regelaar blokkeren ("dichtvriezen"). Twee kleinere drukstappen spreiden dit effect, waardoor de temperatuurdaling per stap veel kleiner is en het risico op ijsvorming sterk afneemt.</p>
+<p><strong>Nauwkeurigere</strong> <strong>regeling</strong>: Doordat de tweede trap op een al gestabiliseerde lagere druk werkt, zijn drukschommelingen bij wisselende flow minimaal. Dit is essentieel bij gasanalyse en meetapparatuur.</p>
+<p><strong>Minder</strong> <strong>kans</strong> <strong>op</strong> <strong>drukkruip</strong>: Bij een single-stage regelaar kan de druk aan de uitgang langzaam oplopen doordat het regelventiel niet 100% dicht zit. Dit noem je <em>drukkruip</em> (in het Engels: "creep"). De tweede trap vangt dit op, waardoor de uitgangsdruk stabiel blijft.</p>
+<p> <em>Vuistregel:</em> <em>kies</em> <em>altijd</em> <em>twee-traps</em> <em>bij</em> <em>analysegassen,</em> <em>continue</em> <em>processen,</em> <em>temperatuurgevoelige</em> <em>toepassingen</em> <em>en</em> <em>situaties</em> <em>met</em> <em>kans</em> <em>op</em> <em>dichtvriezen.</em></p>
+</div>
 </details>
-
 <div style="max-width: 780px; margin: 20px 0;">
-    <div style="border: 2px solid #b0bd36; border-radius: 10px; padding: 12px; margin: 14px 0;">
-        <p style="margin: 0 0 8px;"><strong>Waarom heeft een twee-traps drukregelaar de voorkeur boven een single-stage bij grote drukverschillen (bijvoorbeeld 40 &rarr; 2 bar)?</strong></p>
-        <details style="border: 1px solid #e6e6e6; border-radius: 8px; padding: 8px; margin: 8px 0;">
-            <summary style="list-style: none; cursor: pointer; background: #006445; color: #fff; padding: 8px 10px; border-radius: 6px; display: block;">A) Een twee-traps regelaar is goedkoper dan een single-stage</summary>
-            <div style="margin-top: 8px;">&#10060; Twee-traps is juist duurder; het voordeel zit in stabiliteit en veiligheid, niet in kosten.</div>
-        </details>
-        <details style="border: 1px solid #e6e6e6; border-radius: 8px; padding: 8px; margin: 8px 0;">
-            <summary style="list-style: none; cursor: pointer; background: #006445; color: #fff; padding: 8px 10px; border-radius: 6px; display: block;">B) De drukval wordt verdeeld over twee stappen, dus stabieler en minder afkoeling per stap</summary>
-            <div style="margin-top: 8px;">&#9989; Correct! Door de drukval te verdelen blijft de uitgangsdruk stabieler, neemt het Joule-Thomson-effect per stap af en is er minder kans op dichtvriezen.</div>
-        </details>
-        <details style="border: 1px solid #e6e6e6; border-radius: 8px; padding: 8px; margin: 8px 0;">
-            <summary style="list-style: none; cursor: pointer; background: #006445; color: #fff; padding: 8px 10px; border-radius: 6px; display: block;">C) Twee-traps regelaars hoeven nooit gekalibreerd te worden</summary>
-            <div style="margin-top: 8px;">&#10060; Beide regelaartypen vragen periodiek onderhoud en controle.</div>
-        </details>
-        <details style="border: 1px solid #e6e6e6; border-radius: 8px; padding: 8px; margin: 8px 0;">
-            <summary style="list-style: none; cursor: pointer; background: #006445; color: #fff; padding: 8px 10px; border-radius: 6px; display: block;">D) De flow wordt automatisch gemeten</summary>
-            <div style="margin-top: 8px;">&#10060; Een drukregelaar regelt druk, geen flow; flow-meting is een aparte functie.</div>
-        </details>
-    </div>
+<div style="border: 2px solid #b0bd36; border-radius: 10px; padding: 12px; margin: 14px 0;">
+<p style="margin: 0 0 8px;"><strong>Waarom heeft een twee-traps drukregelaar de voorkeur boven een single-stage bij grote drukverschillen (bijvoorbeeld 40 → 2 bar)?</strong></p>
+<details style="border: 1px solid #e6e6e6; border-radius: 8px; padding: 8px; margin: 8px 0;">
+<summary style="list-style: none; cursor: pointer; background: #006445; color: #fff; padding: 8px 10px; border-radius: 6px; display: block;">A) Een twee-traps regelaar is goedkoper dan een single-stage</summary>
+<div style="margin-top: 8px;">❌ Twee-traps is juist duurder; het voordeel zit in stabiliteit en veiligheid, niet in kosten.</div>
+</details>
+<details style="border: 1px solid #e6e6e6; border-radius: 8px; padding: 8px; margin: 8px 0;">
+<summary style="list-style: none; cursor: pointer; background: #006445; color: #fff; padding: 8px 10px; border-radius: 6px; display: block;">B) De drukval wordt verdeeld over twee stappen, dus stabieler en minder afkoeling per stap</summary>
+<div style="margin-top: 8px;">✅ Correct! Door de drukval te verdelen blijft de uitgangsdruk stabieler, neemt het Joule-Thomson-effect per stap af en is er minder kans op dichtvriezen.</div>
+</details>
+<details style="border: 1px solid #e6e6e6; border-radius: 8px; padding: 8px; margin: 8px 0;">
+<summary style="list-style: none; cursor: pointer; background: #006445; color: #fff; padding: 8px 10px; border-radius: 6px; display: block;">C) Twee-traps regelaars hoeven nooit gekalibreerd te worden</summary>
+<div style="margin-top: 8px;">❌ Beide regelaartypen vragen periodiek onderhoud en controle.</div>
+</details>
+<details style="border: 1px solid #e6e6e6; border-radius: 8px; padding: 8px; margin: 8px 0;">
+<summary style="list-style: none; cursor: pointer; background: #006445; color: #fff; padding: 8px 10px; border-radius: 6px; display: block;">D) De flow wordt automatisch gemeten</summary>
+<div style="margin-top: 8px;">❌ Een drukregelaar regelt druk, geen flow; flow-meting is een aparte functie.</div>
+</details>
 </div>
-            <h4>Hoe werkt een drukregelaar?</h4>
-            <p>Een drukregelaar is eigenlijk een "slimme kraan" die automatisch opent en sluit:</p>
-            <ul>
-                <li>Als de druk te hoog wordt &rarr; de kraan gaat een beetje dicht.</li>
-                <li>Als de druk te laag wordt &rarr; de kraan gaat een beetje open.</li>
-                <li>Zo blijft de druk constant.</li>
-            </ul>
-            <p><strong>Onderdelen:</strong></p>
-            <ul>
-                <li>Membraan of balg (voelt de druk).</li>
-                <li>Veer (stelt de gewenste druk in).</li>
-                <li>Ventiel (regelt de doorstroming).</li>
-            </ul>
+</div>
+<h4>Hoe werkt een drukregelaar?</h4>
+<p>Een drukregelaar is eigenlijk een "slimme kraan" die automatisch opent en sluit:</p>
+<ul>
+<li>Als de druk te hoog wordt → de kraan gaat een beetje dicht.</li>
+<li>Als de druk te laag wordt → de kraan gaat een beetje open.</li>
+<li>Zo blijft de druk constant.</li>
+</ul>
+<p><strong>Onderdelen:</strong></p>
+<ul>
+<li>Membraan of balg (voelt de druk).</li>
+<li>Veer (stelt de gewenste druk in).</li>
+<li>Ventiel (regelt de doorstroming).</li>
+</ul>
 <div style="margin: 16px 0;">
-    <p style="background: #e8f5e9; padding: 12px; border-left: 4px solid #4caf50; margin: 0;"><strong>&#128214; Praktijkvoorbeeld: waterstofmeting in gas met drukregeling</strong></p>
-    <div style="background: #f5f5f5; padding: 16px; border-left: 4px solid #bdbdbd;">
-        <p style="margin: 0;"><strong>De situatie:</strong></p>
-        <ul style="margin: 4px 0 8px 0; padding-left: 24px;">
-            <li>Reactor: 20 bar druk.</li>
-            <li>H&#8322;-analyzer: max. 1 bar.</li>
-            <li>Monster moet representatief blijven.</li>
-        </ul>
-        <p style="margin: 8px 0 0;"><strong>De oplossing:</strong></p>
-        <ul style="margin: 4px 0 8px 0; padding-left: 24px;">
-            <li>Eerste drukregelaar: 20 &rarr; 4 bar (voor het filter).</li>
-            <li>Filter (werkt bij lagere druk beter).</li>
-            <li>Tweede drukregelaar: 4 &rarr; 1 bar (voor de analyzer).</li>
-        </ul>
-        <p style="margin: 8px 0 0;"><strong>Waarom deze opzet?</strong></p>
-        <ul style="margin: 4px 0 0 0;padding-left: 24px;">
-            <li>De analyzer krijgt constante druk, dus een nauwkeurigere meting.</li>
-            <li>Bij drukschommelingen in het proces blijft de meting stabiel.</li>
-            <li>Veilig: als de eerste regelaar faalt, vangt de tweede het op.</li>
-        </ul>
-    </div>
+<p style="background: #e8f5e9; padding: 12px; border-left: 4px solid #4caf50; margin: 0;"><strong>📖 Praktijkvoorbeeld: waterstofmeting in gas met drukregeling</strong></p>
+<div style="background: #f5f5f5; padding: 16px; border-left: 4px solid #bdbdbd;">
+<p style="margin: 0;"><strong>De situatie:</strong></p>
+<ul style="margin: 4px 0 8px 0; padding-left: 24px;">
+<li>Reactor: 20 bar druk.</li>
+<li>H₂-analyzer: max. 1 bar.</li>
+<li>Monster moet representatief blijven.</li>
+</ul>
+<p style="margin: 8px 0 0;"><strong>De oplossing:</strong></p>
+<ul style="margin: 4px 0 8px 0; padding-left: 24px;">
+<li>Eerste drukregelaar: 20 → 4 bar (voor het filter).</li>
+<li>Filter (werkt bij lagere druk beter).</li>
+<li>Tweede drukregelaar: 4 → 1 bar (voor de analyzer).</li>
+</ul>
+<p style="margin: 8px 0 0;"><strong>Waarom deze opzet?</strong></p>
+<ul style="margin: 4px 0 0 0;padding-left: 24px;">
+<li>De analyzer krijgt constante druk, dus een nauwkeurigere meting.</li>
+<li>Bij drukschommelingen in het proces blijft de meting stabiel.</li>
+<li>Veilig: als de eerste regelaar faalt, vangt de tweede het op.</li>
+</ul>
 </div>
-            <h4>Het Joule-Thomson-effect (gas wordt koud bij drukdaling)</h4>
-            <p>Wanneer gas expandeert (druk daalt), koelt het meestal af. Dit kan problemen geven:</p>
-            <ul>
-                <li>Condensatie (druppelvorming).</li>
-                <li>Bevriezing.</li>
-                <li>Hydraatvorming (ijs-achtige kristallen in gas).</li>
-            </ul>
-            <p><strong>Oplossing:</strong> verwarming toevoegen door de drukregelaar te verwarmen &mdash; zo voorkom je condensatie.</p>
-            <h4>Belangrijk bij drukregeling: flow</h4>
-            <p>Een drukregelaar werkt alleen goed als er voldoende doorstroming is:</p>
-            <ul>
-                <li><strong>Te weinig flow:</strong> druk kan niet stabiel gehouden worden.</li>
-                <li><strong>Te veel flow:</strong> drukregelaar kan niet meer regelen.</li>
-                <li><strong>Juiste flow:</strong> stabiele druk en representatief monster.</li>
-            </ul>
-            <h4>Praktische tips voor drukregeling</h4>
-            <ul>
-                <li>Altijd multi-stage gebruiken bij grote drukverschillen (&gt;10 bar verschil).</li>
-                <li>Controleer regelmatig de ingestelde druk.</li>
-                <li>Installeer manometers voor en na de regelaar.</li>
-            </ul>
-            <p><strong>Let op tekenen van problemen:</strong></p>
-            <ul>
-                <li>Condensaat na de regelaar (te veel afkoeling).</li>
-                <li>Zwevende druk (regelaar werkt niet goed).</li>
-                <li>IJsvorming (te koud).</li>
-            </ul>
-
-            <h3 style="margin-top: 30px;">3.7 Alles bij elkaar: Een compleet systeem</h3>
-            <p>Van losse onderdelen naar een werkend geheel</p>
-
+</div>
+<h4>Het Joule-Thomson-effect (gas wordt koud bij drukdaling)</h4>
+<p>Wanneer gas expandeert (druk daalt), koelt het meestal af. Dit kan problemen geven:</p>
+<ul>
+<li>Condensatie (druppelvorming).</li>
+<li>Bevriezing.</li>
+<li>Hydraatvorming (ijs-achtige kristallen in gas).</li>
+</ul>
+<p><strong>Oplossing:</strong> verwarming toevoegen door de drukregelaar te verwarmen — zo voorkom je condensatie.</p>
+<h4>Belangrijk bij drukregeling: flow</h4>
+<p>Een drukregelaar werkt alleen goed als er voldoende doorstroming is:</p>
+<ul>
+<li><strong>Te weinig flow:</strong> druk kan niet stabiel gehouden worden.</li>
+<li><strong>Te veel flow:</strong> drukregelaar kan niet meer regelen.</li>
+<li><strong>Juiste flow:</strong> stabiele druk en <a href="../afkortingen.html#abbr-representatief-monster-jump" style="text-decoration: none;"><abbr title="Een monster dat dezelfde samenstelling heeft als het materiaal in de hoofdleiding, op het moment van bemonsteren." style="color: #006445; font-weight: 600; text-decoration: underline dotted #006445; text-underline-offset: 3px; cursor: help;">representatief monster</abbr></a>.</li>
+</ul>
+<h4>Praktische tips voor drukregeling</h4>
+<ul>
+<li>Altijd multi-stage gebruiken bij grote drukverschillen (&gt;10 bar verschil).</li>
+<li>Controleer regelmatig de ingestelde druk.</li>
+<li>Installeer manometers voor en na de regelaar.</li>
+</ul>
+<p><strong>Let op tekenen van problemen:</strong></p>
+<ul>
+<li>Condensaat na de regelaar (te veel afkoeling).</li>
+<li>Zwevende druk (regelaar werkt niet goed).</li>
+<li>IJsvorming (te koud).</li>
+</ul>
+<h3 style="margin-top: 30px;">3.7 Alles bij elkaar: Een compleet systeem</h3>
+<p>Van losse onderdelen naar een werkend geheel</p>
 <!-- FOTO PLACEHOLDER - Briefing M3-H3-foto-12 -->
 <div style="background: #f5f5f5; border: 2px dashed #bdbdbd; border-radius: 8px; padding: 20px; margin: 16px 0; max-width: 400px;">
-    <p style="margin: 0 0 8px; color: #757575;"><strong>&#128247; M3-H3-foto-12: Compleet sample-conditioning-systeem</strong></p>
-    <p style="margin: 0 0 12px; font-size: 14px; color: #666;">Volledig sample-conditioning-panel met filter, temperatuurregeling, waterafscheider, tweede filter, drukregelaar en flowmeter op RVS-rail; typisch voor zuurstof-rookgasmeting.</p>
-    <div style="background: #fff; padding: 12px; border-radius: 4px; font-size: 13px;">
-        <strong>Elementen:</strong> filter, temperatuurregeling, waterafscheider, tweede filter, drukregelaar, flowmeter, RVS-rail
+<p style="margin: 0 0 8px; color: #757575;"><strong>📷 M3-H3-foto-12: Compleet sample-conditioning-systeem</strong></p>
+<p style="margin: 0 0 12px; font-size: 14px; color: #666;">Volledig sample-conditioning-panel met filter, temperatuurregeling, waterafscheider, tweede filter, drukregelaar en flowmeter op RVS-rail; typisch voor zuurstof-rookgasmeting.</p>
+<div style="background: #fff; padding: 12px; border-radius: 4px; font-size: 13px;">
+<strong>Elementen:</strong> filter, temperatuurregeling, waterafscheider, tweede filter, drukregelaar, flowmeter, RVS-rail
     </div>
 </div>
 <!-- /FOTO PLACEHOLDER -->
-
 <!-- INFOGRAPHIC PLACEHOLDER - Briefing M3-H3-infographic-2 -->
 <div style="background: #f5f5f5; border: 2px dashed #bdbdbd; border-radius: 8px; padding: 20px; margin: 16px 0; max-width: 500px;">
-    <p style="margin: 0 0 8px; color: #757575;"><strong>&#128202; M3-H3-infographic-2: Rookgas O2 sample-systeem (7 stappen)</strong></p>
-    <p style="margin: 0 0 12px; font-size: 14px; color: #666;">Volledig stroomschema rookgas-O2-meting; 7 genummerde stappen met T- en P-waarden per punt.</p>
-    <div style="background: #fff; padding: 12px; border-radius: 4px; font-size: 13px;">
-        <strong>Elementen:</strong> aftappunt rookgaskanaal, sintered metal filter 180&deg;C, verwarmde leiding 200&deg;C, koeler naar 180&deg;C, waterafscheider met drainpunt, 5 &micro;m fijnfilter, single-stage drukregelaar 1.2&rarr;1.05 bar, flowmeter, analyzer AT-xxx; kleurcodering heet (rood) &rarr; koel (blauw); maakroute Visio.
+<p style="margin: 0 0 8px; color: #757575;"><strong>📊 M3-H3-infographic-2: Rookgas O2 sample-systeem (7 stappen)</strong></p>
+<p style="margin: 0 0 12px; font-size: 14px; color: #666;">Volledig stroomschema rookgas-O2-meting; 7 genummerde stappen met T- en P-waarden per punt.</p>
+<div style="background: #fff; padding: 12px; border-radius: 4px; font-size: 13px;">
+<strong>Elementen:</strong> aftappunt rookgaskanaal, sintered metal filter 180°C, verwarmde leiding 200°C, koeler naar 180°C, waterafscheider met drainpunt, 5 µm fijnfilter, single-stage drukregelaar 1.2→1.05 bar, flowmeter, analyzer <a href="../afkortingen.html#abbr-AT-jump" style="text-decoration: none;"><abbr title="Analyzer Transmitter — Analyzer die zijn meetwaarde als signaal naar het DCS verstuurt." style="color: #006445; font-weight: 600; text-decoration: underline dotted #006445; text-underline-offset: 3px; cursor: help;">AT</abbr></a>-xxx; kleurcodering heet (rood) → koel (blauw); maakroute Visio.
     </div>
 </div>
 <!-- /INFOGRAPHIC PLACEHOLDER -->
-            <p>Tot nu toe hebben we filtratie, temperatuur en druk apart bekeken. Maar in de praktijk werk je nooit met maar één techniek tegelijk. Je hebt ze alle drie nodig, en ze moeten perfect op elkaar afgestemd zijn. Het is een beetje zoals koken: je hebt ingrediënten (filtering), je moet ze op de juiste temperatuur brengen (temperatuurregeling), en je moet de juiste druk gebruiken (denk aan een snelkookpan). Als je één stap verkeerd doet of in de verkeerde volgorde, mislukt je gerecht.</p>
-            <p>De vraag is dus: in welke volgorde doe je wat? En waarom is die volgorde belangrijk?</p>
-            <p>Laten we kijken naar een typische opbouw van een compleet monstervoorbereidingssysteem. Dit is geen wet van Meden en Perzen, maar het is wel een logische manier die in de praktijk vaak wordt gebruikt.</p>
-            <p>Typische opbouw van een monstervoorbereidingssysteem (afhankelijk van wat je meet):</p>
-            <ol>
-                <li><strong>Grove filtering:</strong> direct na het aftappunt. Haalt grote deeltjes (&gt;100 &mu;m) weg en beschermt de rest van het systeem tegen grove vervuiling.</li>
-                <li><strong>Temperatuurregeling:</strong> afkoelen of opwarmen via warmtewisselaar of verwarmde leiding (bijv. van 300&deg;C naar 45&deg;C).</li>
-                <li><strong>Fijne filtering:</strong> net voor de drukverlaging. Bescherming tegen fijne deeltjes (&lt;10 &mu;m).</li>
-                <li><strong>Eerste drukverlaging:</strong> van procesdruk naar een tussendruk (bijv. 40 &rarr; 10 bar). Multi-stage bij grote drukverschillen.</li>
-                <li><strong>Tweede drukverlaging:</strong> naar de uiteindelijke analyzerdruk (bijv. 10 &rarr; 2 bar). Fijnregeling voor stabiele meetomstandigheden.</li>
-                <li><strong>Fijne filtering:</strong> net voor de analyzer (laatste beschermingslaag). Bescherming tegen fijne deeltjes (&lt;1 &mu;m).</li>
-            </ol>
+<p>Tot nu toe hebben we filtratie, temperatuur en druk apart bekeken. Maar in de praktijk werk je nooit met maar één techniek tegelijk. Je hebt ze alle drie nodig, en ze moeten perfect op elkaar afgestemd zijn. Het is een beetje zoals koken: je hebt ingrediënten (filtering), je moet ze op de juiste temperatuur brengen (temperatuurregeling), en je moet de juiste druk gebruiken (denk aan een snelkookpan). Als je één stap verkeerd doet of in de verkeerde volgorde, mislukt je gerecht.</p>
+<p>De vraag is dus: in welke volgorde doe je wat? En waarom is die volgorde belangrijk?</p>
+<p>Laten we kijken naar een typische opbouw van een compleet monstervoorbereidingssysteem. Dit is geen wet van Meden en Perzen, maar het is wel een logische manier die in de praktijk vaak wordt gebruikt.</p>
+<p>Typische opbouw van een monstervoorbereidingssysteem (afhankelijk van wat je meet):</p>
+<ol>
+<li><strong>Grove filtering:</strong> direct na het aftappunt. Haalt grote deeltjes (&gt;100 μm) weg en beschermt de rest van het systeem tegen grove vervuiling.</li>
+<li><strong>Temperatuurregeling:</strong> afkoelen of opwarmen via warmtewisselaar of verwarmde leiding (bijv. van 300°C naar 45°C).</li>
+<li><strong>Fijne filtering:</strong> net voor de drukverlaging. Bescherming tegen fijne deeltjes (&lt;10 μm).</li>
+<li><strong>Eerste drukverlaging:</strong> van procesdruk naar een tussendruk (bijv. 40 → 10 bar). Multi-stage bij grote drukverschillen.</li>
+<li><strong>Tweede drukverlaging:</strong> naar de uiteindelijke analyzerdruk (bijv. 10 → 2 bar). Fijnregeling voor stabiele meetomstandigheden.</li>
+<li><strong>Fijne filtering:</strong> net voor de analyzer (laatste beschermingslaag). Bescherming tegen fijne deeltjes (&lt;1 μm).</li>
+</ol>
 <div style="margin: 16px 0;">
-    <p style="background: #e8f5e9; padding: 12px; border-left: 4px solid #4caf50; margin: 0;"><strong>&#128214; Praktijkvoorbeeld: complete setup voor emissiemeting in rookgas</strong></p>
-    <div style="background: #f5f5f5; padding: 16px; border-left: 4px solid #bdbdbd;">
-        <p style="margin: 0;"><strong>Het proces:</strong></p>
-        <ul style="margin: 4px 0 8px 0; padding-left: 24px;">
-            <li>Rookgas van een verbrandingsinstallatie.</li>
-            <li>Temperatuur: 400&deg;C.</li>
-            <li>Druk: 1,2 bara (lichte overdruk).</li>
-            <li>Bevat stof, roet en waterdamp.</li>
-            <li>Zuurstof, CO, SO&#8322; en NOx moeten gemeten worden.</li>
-        </ul>
-        <p style="margin: 8px 0 0;"><strong>De analyzer:</strong></p>
-        <ul style="margin: 4px 0 8px 0; padding-left: 24px;">
-            <li>Heeft schoon, droog gas nodig.</li>
-            <li>Temperatuur: 60&deg;C.</li>
-            <li>Druk: 1,05 bara.</li>
-        </ul>
-        <details style="border: 1px solid #b0bd36; border-radius: 8px; padding: 8px 12px; margin: 12px 0 8px 0; background: #fff;">
-            <summary style="cursor: pointer; color: #006445; padding: 4px 0;"><strong>&#9881;&#65039; Bekijk de complete oplossing in 7 stappen</strong></summary>
-            <ol style="margin: 8px 0 8px 0; padding-left: 24px;">
-                <li><strong>Aftappunt met grove filter:</strong> sintered metal filter (poreus metaal met microscopisch kleine gaatjes; werkt als zeer fijne zeef die ook bij hoge temperaturen stabiel blijft). Haalt roet en grote deeltjes weg, blijft heet door de hoge gastemperatuur (180&deg;C+) waardoor water niet kan condenseren.</li>
-                <li><strong>Verwarmde leiding:</strong> sample-leiding verwarmen op 180&deg;C (meestal met elektrische heating trace, verwarmingskabels langs de leiding). Voorkomt condensatie van water (water blijft gas).</li>
-                <li><strong>Verwarmde pomp:</strong> een membraampomp creëert een kleine overdruk.</li>
-                <li><strong>Koeler:</strong> gecontroleerd afkoelen van 180&deg;C naar 4&deg;C. Langzaam genoeg (eventueel 2-traps) om evenwicht te behouden, snel genoeg om chemische reacties te stoppen (in dit geval wil je SO&#8322; behouden).</li>
-                <li><strong>Waterafscheider:</strong> klein vat waar het gas doorheen stroomt; waterdruppels zakken naar beneden (condensaat) en worden automatisch afgevoerd. Alleen droog gas gaat door naar de analyzer.</li>
-                <li><strong>Fijn filter:</strong> 5 &mu;m filter (ongeveer 10x kleiner dan een haar). Laatste bescherming voor de gevoelige analyzer-sensor.</li>
-                <li><strong>Flowmeter:</strong> controleert of de flow constant is en geeft alarm bij te weinig of te veel flow.</li>
-            </ol>
-        </details>
-        <p style="margin: 8px 0 0;"><strong>Het resultaat:</strong></p>
-        <ul style="margin: 4px 0 0 0; padding-left: 24px;">
-            <li>Schoon, droog gas.</li>
-            <li>Juiste temperatuur en druk.</li>
-            <li>Representatief voor het proces.</li>
-            <li>Analyzer werkt jarenlang betrouwbaar.</li>
-        </ul>
-    </div>
+<p style="background: #e8f5e9; padding: 12px; border-left: 4px solid #4caf50; margin: 0;"><strong>📖 Praktijkvoorbeeld: complete setup voor emissiemeting in rookgas</strong></p>
+<div style="background: #f5f5f5; padding: 16px; border-left: 4px solid #bdbdbd;">
+<p style="margin: 0;"><strong>Het proces:</strong></p>
+<ul style="margin: 4px 0 8px 0; padding-left: 24px;">
+<li>Rookgas van een verbrandingsinstallatie.</li>
+<li>Temperatuur: 400°C.</li>
+<li>Druk: 1,2 bara (lichte overdruk).</li>
+<li>Bevat stof, roet en waterdamp.</li>
+<li>Zuurstof, <a href="../afkortingen.html#abbr-CO-jump" style="text-decoration: none;"><abbr title="koolmonoxide — Reukloos en zeer giftig gas dat ontstaat bij onvolledige verbranding. Grenswaarde meestal 25 ppm." style="color: #006445; font-weight: 600; text-decoration: underline dotted #006445; text-underline-offset: 3px; cursor: help;">CO</abbr></a>, <a href="../afkortingen.html#abbr-SO-jump" style="text-decoration: none;"><abbr title="zwaveldioxide — Giftig en bijtend gas. Ontstaat bij verbranding van zwavelhoudende brandstof. Wordt door CEMS gemeten in rookgas." style="color: #006445; font-weight: 600; text-decoration: underline dotted #006445; text-underline-offset: 3px; cursor: help;">SO₂</abbr></a> en NOx moeten gemeten worden.</li>
+</ul>
+<p style="margin: 8px 0 0;"><strong>De analyzer:</strong></p>
+<ul style="margin: 4px 0 8px 0; padding-left: 24px;">
+<li>Heeft schoon, droog gas nodig.</li>
+<li>Temperatuur: 60°C.</li>
+<li>Druk: 1,05 bara.</li>
+</ul>
+<details style="border: 1px solid #b0bd36; border-radius: 8px; padding: 8px 12px; margin: 12px 0 8px 0; background: #fff;">
+<summary style="cursor: pointer; color: #006445; padding: 4px 0;"><strong>⚙️ Bekijk de complete oplossing in 7 stappen</strong></summary>
+<ol style="margin: 8px 0 8px 0; padding-left: 24px;">
+<li><strong>Aftappunt met grove filter:</strong> sintered metal filter (poreus metaal met microscopisch kleine gaatjes; werkt als zeer fijne zeef die ook bij hoge temperaturen stabiel blijft). Haalt roet en grote deeltjes weg, blijft heet door de hoge gastemperatuur (180°C+) waardoor water niet kan condenseren.</li>
+<li><strong>Verwarmde leiding:</strong> sample-leiding verwarmen op 180°C (meestal met elektrische heating trace, verwarmingskabels langs de leiding). Voorkomt condensatie van water (water blijft gas).</li>
+<li><strong>Verwarmde pomp:</strong> een membraampomp creëert een kleine overdruk.</li>
+<li><strong>Koeler:</strong> gecontroleerd afkoelen van 180°C naar 4°C. Langzaam genoeg (eventueel 2-traps) om evenwicht te behouden, snel genoeg om chemische reacties te stoppen (in dit geval wil je SO₂ behouden).</li>
+<li><strong>Waterafscheider:</strong> klein vat waar het gas doorheen stroomt; waterdruppels zakken naar beneden (condensaat) en worden automatisch afgevoerd. Alleen droog gas gaat door naar de analyzer.</li>
+<li><strong>Fijn filter:</strong> 5 μm filter (ongeveer 10x kleiner dan een haar). Laatste bescherming voor de gevoelige analyzer-sensor.</li>
+<li><strong>Flowmeter:</strong> controleert of de flow constant is en geeft alarm bij te weinig of te veel flow.</li>
+</ol>
+</details>
+<p style="margin: 8px 0 0;"><strong>Het resultaat:</strong></p>
+<ul style="margin: 4px 0 0 0; padding-left: 24px;">
+<li>Schoon, droog gas.</li>
+<li>Juiste temperatuur en druk.</li>
+<li>Representatief voor het proces.</li>
+<li>Analyzer werkt jarenlang betrouwbaar.</li>
+</ul>
 </div>
-
-        </section>
-        <section class="item3" style="margin-top: 50px;">
-            <div class="zadkine-navigation-button grow"><a style="display: block; white-space: normal; cursor: default; padding-right: 48px;" href="#"> 🛠️ Start praktijkopdracht 3.3 <em>(binnenkort)</em> </a></div>
-            <div class="zadkine-navigation-button grow"><a style="display: block; white-space: normal; padding-right: 48px;" href="ana-m3-h3-samenvatting.html"> 📝 Samenvatting &amp; Reflectie 3.3 </a></div>
-            <div class="zadkine-navigation-button grow"><a style="display: block; white-space: normal; padding-right: 48px;" href="ana-m3-overzicht.html"> 👈 Module 3 overzicht </a></div>
-        </section>
-        <section class="item4"><img src="media/tcr-logo.png" alt="TCR logo" style="max-width: 100px; display: block; margin: 20px 0;" /></section>
-    </div>
+</div>
+</section>
+<section class="item3" style="margin-top: 50px;">
+<div class="zadkine-navigation-button grow"><a href="#" style="display: block; white-space: normal; cursor: default; padding-right: 48px;"> 🛠️ Start praktijkopdracht 3.3 <em>(binnenkort)</em> </a></div>
+<div class="zadkine-navigation-button grow"><a href="ana-m3-h3-samenvatting.html" style="display: block; white-space: normal; padding-right: 48px;"> 📝 Samenvatting &amp; Reflectie 3.3 </a></div>
+<div class="zadkine-navigation-button grow"><a href="ana-m3-overzicht.html" style="display: block; white-space: normal; padding-right: 48px;"> 👈 Module 3 overzicht </a></div>
+</section>
+<section class="item4"><img alt="TCR logo" src="media/tcr-logo.png" style="max-width: 100px; display: block; margin: 20px 0;"/></section>
+</div>
 </div>
         <div class="feedback-bar">
             <p>Heb je feedback op deze pagina? Laat het weten via GitHub.</p>
